@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+
+
+body {
+    margin: 0;
+}
+
+h1 {
+    align-items: center;
+    text-align: justify;
+    /* font-family: 'Nabla', cursive; */
+    font-family: 'Anton', sans-serif;
+    font-weight: 900;
+    font-size: 5em;
+    border: 2px solid yellowgreen;
+    color: rgb(255, 255, 255);
+}
+
+.subtitulo {
+    align-items: center;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    font-size: 0.8em;
+    color: #fff;
+    margin-top: -2em;
+}
+
+.topo {
+    align-items: center;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    color: #fff;
+    margin-bottom: -4.5em;
+    margin-top: 6em;
+}
+
+.ponto {
+    align-items: center;
+    text-align: justify;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 100;
+    color: #fff;
+    color: dodgerblue;
+
+}
+
+.span {
+    margin-top: 3em;
+}
+
+hr {
+    margin: 4em 2em;
+    background-color: #f4a943;
+    border-color: #f4a943;
+    height: 2px;
+    border-radius: 9em;
+}
+
+a {
+    color: #fff;
+}
+
+.container {
+    border: 1px solid red;
+    height: 99.8vh;
+    display: flex;
+}
+
+.apresentation-login {
+    border: 2px solid yellow;
+    width: 40%;
+    /* background: rgb(7, 122, 104);
+    background: radial-gradient(circle, rgba(29, 128, 79, 1) 0%, rgba(0, 31, 19, 1) 60%); */
+    background: rgb(40, 40, 40);
+}
+
+
+.image-login {
+    border: 2px solid blue;
+    background-color: transparent;
+    width: 60%;
+    /* background: rgb(255, 255, 255);
+    background: radial-gradient(circle, rgba(122, 228, 174, 1) 30%, rgba(55, 148, 101, 1) 30%, rgba(90, 193, 141, 1) 42%,
+            rgba(19, 135, 77, 1) 42%, rgba(47, 185, 117, 1) 50%, rgba(22, 94, 58, 1) 50%,
+            rgba(29, 128, 79, 1) 17%, rgba(0, 31, 19, 1) 76%); */
+    background: rgb(154, 154, 154);
+    background: radial-gradient(circle, transparent 0%, rgba(154, 154, 154, 1) 30%, rgb(40, 40, 40) 75%);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.content-login {
+    margin: 0 10rem;
+}
+
+.form {
+    width: 100%;
+    border: 2px solid rgb(255, 0, 136);
+}
+
+.form_input {
+    width: 93.2%;
+    padding: 1.4em 1em;
+    margin-top: 2em;
+    border-radius: 1em;
+    border: none;
+    background: rgb(23, 23, 23);
+    color: rgb(46, 165, 255);
+    font-weight: 700;
+    font-size: 1em;
+
+
+}
+
+input::placeholder {
+    /* color: rgb(255, 255, 255); */
+    font-weight: 900;
+    font-size: 1em;
+}
+
+.sub-info {
+    border: 2px solid #fff;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 0.9em;
+}
+
+.caption {
+    margin-top: -1.4em;
+    margin-left: 15.8em;
+}
+
+
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+/*_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________*/
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48;
+    color: #fff;
+    padding: auto;
+    margin-left: 17em;
+}
