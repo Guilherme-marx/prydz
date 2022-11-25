@@ -5,53 +5,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Prydz</title>
 </head>
-<style>
-
-</style>
 
 <body>
     <div class="container">
         <div class="apresentation-login">
             <div class="content-login">
                 <div>
-                    <div class="informatio">
-                        <h1>redefinir senha</h1>
-                        <p class="gradient">
-                            digite codigo enviado por email para redefinir sua senha
+                    <div class="information">
+                        <span>agora redefina sua</span>
+                        <h1 style="text-transform: uppercase;">senha</h1>
+                        <p class="subtitle">
+                            digite o codigo que foi enviado para o seu email e escolha uma senha facil de lembra que
+                            tenha no minimo 8 digitos
                         </p>
                     </div>
                 </div>
-                <div>
-                    <form action="index2.html" method="get" class="form">
+                <dgitiv>
+                    <form action="redefinirSenhaPage.html" method="get" class="form">
                         <div clssa="form__imaggroup">
-                            <input type="password" class="form_input" id="password" placeholder="escolha uma senha"
-                                required />
-                        </div>
-                        <div>
-                            <input type="password" class="form_input" id="password" placeholder="digite a mesma senha"
-                                required="true" />
-                        </div>
-
-                        <div class="sub-info">
-                            <hr>
                             <div>
-                                <button type="submit" class="btn-grad">Receber codigo</button>
+                                <input type="password" class="form_input" id="email" placeholder="digite uma nova senha"
+                                    minlength="8" required />
+                            </div>
+                            <div>
+                                <input type="password" class="form_input" id="password" placeholder="confirme sua senha"
+                                    minlength="8" equired>
+                            </div>
+                            <!--_____________________-->
+                            <hr>
+                            <!--_________________________________________________________________________________________________________________________________________________________________________________-->
+                            <div>
+                                <button type="submit" class="btn-grad">redefinir</button>
                             </div>
                         </div>
                     </form>
-                </div>
             </div>
         </div>
-        <div class="image-login">
-            <div>
-                <div class="circulo"></div>
-            </div>
+        <div class="container-image">
+            <div class="image-login"></div>
 
         </div>
-    </div>
     </div>
 </body>
 
