@@ -10,7 +10,7 @@
  }
 
  .container {
-     border: 2px solid rgb(243, 179, 2);
+     /* border: 2px solid rgb(243, 179, 2); */
      display: flex;
  }
 
@@ -25,7 +25,7 @@
 
  .content-login {
      margin: 10em 10rem;
-     border: 2px solid rgb(243, 2, 42);
+     /* border: 2px solid rgb(243, 2, 42); */
  }
 
 
@@ -84,10 +84,14 @@
  }
 
  .image-login {
-     /* background-image: url("../img/3094352.jpg"); */
+     background-image: url("../img/3094352.jpg");
+     /* border: 2px solid blue; */
      background-size: cover;
      width: 500px;
      height: 500px;
+     position: relative;
+     top: 13em;
+     left: 21em;
  }
 
  /* style formulario */
