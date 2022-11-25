@@ -1,0 +1,127 @@
+ @import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+ /* Style global */
+ body {
+     margin: 0;
+ }
+
+ .container {
+     display: flex;
+ }
+
+ /* Style login formulario */
+
+ .apresentation-login {
+     width: 40%;
+ }
+
+ .content-login {
+     margin: 10em 10rem;
+     border: 2px solid pink;
+ }
+
+
+ /* formulario  */
+ .form {
+     width: 100%;
+     margin-top: 2em;
+     border-radius: 1em;
+
+ }
+
+ input::placeholder {
+     font-weight: 900;
+     font-size: 1.3em;
+ }
+
+ .sub-info {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 800;
+     font-size: 0.9em;
+ }
+
+ .caption {
+     margin-top: 2em;
+     padding: 1.4em 1em;
+     margin-top: 2em;
+     border-radius: 1em;
+
+ }
+
+ input::placeholder {
+     font-weight: 900;
+     font-size: 1.3em;
+ }
+
+ .sub-info {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 800;
+     font-size: 0.9em;
+ }
+
+ .caption {
+     margin-top: 2em;
+ }
+
+ /* Style button  */
+ .button:active {
+     top: 2px;
+     position: relative;
+ }
+
+ .background {
+     background-image: url("./ENTRAR\ \(1\).png");
+     width: 100%;
+     height: 100%;
+ }
+
+ .form_input {
+     width: 93.2%;
+     padding: 1.4em 1em;
+     margin-top: 2em;
+     border-radius: 1em;
+
+ }
+
+ input::placeholder {
+     font-weight: 900;
+     font-size: 1.3em;
+ }
+
+ .sub-info {
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 800;
+     font-size: 0.9em;
+ }
+
+ .caption {
+     margin-top: 2em;
+ }
+
+ .button:active {
+     top: 2px;
+     position: relative;
+ }
+
+ .background {
+     background-image: url("./img/3094352.jpg");
+     width: 100%;
+     height: 20px;
+ }
+
+ /* Style Imagem Login */
+ .container-image {
+     width: 60%;
+     height: 100vh;
+ }
+
+ .image-login {
+     background-image: url("../img/3094352.jpg");
+     background-size: cover;
+     width: 500px;
+     height: 500px;
+ }
