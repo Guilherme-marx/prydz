@@ -10,18 +10,22 @@
  }
 
  .container {
+     border: 2px solid rgb(243, 179, 2);
      display: flex;
  }
 
  /* Style login formulario */
 
  .apresentation-login {
+     /* border: 2px solid rgb(46, 2, 243); */
+     background: rgb(0, 138, 101);
+     background: rgb(0, 46, 31);
      width: 40%;
  }
 
  .content-login {
      margin: 10em 10rem;
-     border: 2px solid pink;
+     border: 2px solid rgb(243, 2, 42);
  }
 
 
@@ -33,30 +37,36 @@
 
  }
 
+ .form_input {
+     padding: 1.5em 1em;
+     height: auto;
+     width: 28.5em;
+     margin: 1em;
+     border: none;
+     border-radius: 0.5em;
+     background-color: rgb(0, 38, 25);
+     /* outline-color: rgb(0, 138, 101); */
+ }
+
  input::placeholder {
      font-weight: 900;
      font-size: 1.3em;
- }
-
- .sub-info {
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight: 800;
-     font-size: 0.9em;
+     color: aliceblue;
  }
 
  .caption {
      margin-top: 2em;
-     padding: 1.4em 1em;
-     margin-top: 2em;
-     border-radius: 1em;
-
+     height: 1em;
+     width: 10.031em;
+     margin-left: 12.6em;
+     margin-top: -1.2em;
+     font-size: 1.2em;
+     color: #fff;
+     /* border: 1px solid #fff; */
  }
 
- /* Style button  */
- .button:active {
-     top: 2px;
-     position: relative;
- }
+ /* Style background */
+
 
  .background {
      background-image: url("./img/3094352.jpg");
@@ -67,12 +77,49 @@
  /* Style Imagem Login */
  .container-image {
      width: 60%;
+     /* border: 2px solid rgb(255, 0, 200); */
+     /* background: rgb(0, 138, 101); */
+     /* background: radial-gradient(circle, rgba(0, 138, 101, 1) 0%, rgba(0, 24, 16, 1) 72%); */
      height: 100vh;
  }
 
  .image-login {
-     background-image: url("../img/3094352.jpg");
+     /* background-image: url("../img/3094352.jpg"); */
      background-size: cover;
      width: 500px;
      height: 500px;
+ }
+
+ /* style formulario */
+ h1 {
+     color: aliceblue;
+     font-size: 4em;
+     margin: -0.2em 0em 0.3em 0em;
+ }
+
+ p {
+     color: aliceblue;
+     text-align: justify;
+ }
+
+ hr {
+     margin: 2em;
+     width: 22em;
+     height: 2px;
+     background-color: rgb(255, 228, 177);
+ }
+
+ a {
+     color: #fff;
+     font-size: 1.2em;
+ }
+
+ /* style button */
+
+ .btn-grad {
+     width: auto;
+     height: auto;
+     padding: 0.5em 2em;
+     font-size: 1.4em;
+     margin: 3em 0em 0em 6.3em;
  }
