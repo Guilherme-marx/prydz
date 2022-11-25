@@ -9,6 +9,11 @@
      margin: 0;
  }
 
+ span {
+     color: #fff;
+     font-size: 1.15em;
+ }
+
  .container {
      /* border: 2px solid rgb(243, 179, 2); */
      display: flex;
@@ -45,6 +50,7 @@
      border: none;
      border-radius: 0.5em;
      background-color: rgb(0, 38, 25);
+     color: #fff;
      /* outline-color: rgb(0, 138, 101); */
  }
 
@@ -126,4 +132,8 @@
      padding: 0.5em 2em;
      font-size: 1.4em;
      margin: 3em 0em 0em 6.3em;
+     background: rgb(255, 255, 255);
+     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(53, 179, 188) 100%);
+     border: none;
+     border-radius: 1em;
  }
