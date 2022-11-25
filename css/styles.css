@@ -11,6 +11,8 @@
 
  .container {
      display: flex;
+     border: 2px solid rgb(255, 0, 43);
+
  }
 
  /* Style login formulario */
@@ -21,7 +23,6 @@
 
  .content-login {
      margin: 10em 10rem;
-     border: 2px solid pink;
  }
 
 
