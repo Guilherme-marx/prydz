@@ -52,56 +52,7 @@
 
  }
 
- input::placeholder {
-     font-weight: 900;
-     font-size: 1.3em;
- }
-
- .sub-info {
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight: 800;
-     font-size: 0.9em;
- }
-
- .caption {
-     margin-top: 2em;
- }
-
  /* Style button  */
- .button:active {
-     top: 2px;
-     position: relative;
- }
-
- .background {
-     background-image: url("./ENTRAR\ \(1\).png");
-     width: 100%;
-     height: 100%;
- }
-
- .form_input {
-     width: 93.2%;
-     padding: 1.4em 1em;
-     margin-top: 2em;
-     border-radius: 1em;
-
- }
-
- input::placeholder {
-     font-weight: 900;
-     font-size: 1.3em;
- }
-
- .sub-info {
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight: 800;
-     font-size: 0.9em;
- }
-
- .caption {
-     margin-top: 2em;
- }
-
  .button:active {
      top: 2px;
      position: relative;
