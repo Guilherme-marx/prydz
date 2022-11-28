@@ -23,7 +23,7 @@
 
  .apresentation-login {
      /* border: 2px solid rgb(46, 2, 243); */
-     background: rgb(0, 138, 101);
+     /* background: #008a65; */
      background: rgb(0, 46, 31);
      width: 40%;
  }
@@ -129,11 +129,60 @@
  .btn-grad {
      width: auto;
      height: auto;
+     font-weight: 600;
+     text-transform: uppercase;
      padding: 0.5em 2em;
      font-size: 1.4em;
-     margin: 3em 0em 0em 6.3em;
-     background: rgb(255, 255, 255);
-     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgb(53, 179, 188) 100%);
+     margin: 3em 0em 0em 6.2em;
+     color: rgb(255, 255, 255);
+     background: radial-gradient(circle, #258441 0%, #00442d 100%);
      border: none;
      border-radius: 1em;
+     transition: 1s;
+ }
+
+ .btn-grad:hover {
+     width: auto;
+     height: auto;
+     font-weight: 600;
+     text-transform: uppercase;
+     padding: 0.4em 1.8em;
+     font-size: 1.4em;
+     margin: 3.1em 0em 0em 6.3em;
+     color: rgb(255, 255, 255);
+     background: radial-gradient(circle, #258441 0%, #00442d 100%);
+     border: none;
+     border-radius: 1em;
+     transition: 0.2s;
+ }
+
+ .btn-grade {
+     width: auto;
+     height: auto;
+     font-weight: 600;
+     text-transform: uppercase;
+     padding: 1.2em 2em;
+     font-size: 1.4em;
+     margin: 3em 0em 0em 4em;
+     color: rgb(255, 255, 255);
+     background: radial-gradient(circle, #258441 0%, #00442d 100%);
+     border: none;
+     border-radius: 1em;
+     transition: 1s;
+
+ }
+
+ .btn-grade:hover {
+     width: auto;
+     height: auto;
+     font-weight: 600;
+     text-transform: uppercase;
+     padding: 1em 1em;
+     font-size: 1.3em;
+     margin: 3.5em 0em 0em 6em;
+     color: rgb(255, 255, 255);
+     background: radial-gradient(circle, #258441 0%, #00442d 100%);
+     border: none;
+     border-radius: 1em;
+     transition: 0.2s;
  }
