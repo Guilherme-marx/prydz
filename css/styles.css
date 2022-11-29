@@ -117,6 +117,8 @@
  p {
      color: aliceblue;
      text-align: justify;
+     font-family: 'Courier New', Courier, monospace;
+     font-size: 0.9em;
  }
 
  hr {
