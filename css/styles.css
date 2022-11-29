@@ -168,20 +168,40 @@
      width: auto;
      height: auto;
      padding: 4em 1em;
+     transition: 1s;
      color: rgb(255, 255, 255);
      font-size: 2.5rem;
      font-weight: 500;
      text-transform: uppercase;
      font-family: fredoka one;
-     margin: -1em 0em -2em 0em;
+ }
+
+ .glass-efect:hover {
+     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+     backdrop-filter: blur(4px);
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     border: 1px solid rgba(255, 255, 255, 0.18);
+     border-radius: 20px;
+     text-align: center;
+     width: auto;
+     height: auto;
+     padding: 4.4em 1.4em;
+     transition: 0.4s;
+     color: rgb(255, 255, 255);
+     font-size: 2.7rem;
+     font-weight: 500;
+     text-transform: uppercase;
+     font-family: fredoka one;
+     margin: 0em 0em 2em 0em;
  }
 
  footer {
-     position: fixed;
+     position: unset;
      left: 0;
      bottom: 0;
      width: 100%;
-     background-color: rgb(36, 48, 83);
+     padding: 1em 0em;
+     background-color: rgb(25, 68, 104);
      color: rgb(255, 255, 255);
      text-align: center;
      font-family: 'Bungee Inline', cursive;

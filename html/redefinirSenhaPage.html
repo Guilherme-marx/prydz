@@ -6,6 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="P">
+    <meta name="keywords" content="login, log ,Login, Log, html, css, pagina de login">
+    <meta http-equiv="cache-control" content="No-Store">
+    <meta http-equiv="content-language" content="pt-br, en-US, fr">
+    <meta name="author" content="Guilherme Marques">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="copyright" content="© 2022 guilhermeMarx">
+    <meta name="robots" content="follow">
     <title>Prydz</title>
 </head>
 
@@ -15,47 +23,57 @@
             <div class="content-login">
                 <div>
                     <div class="information">
-                        <span>agora redefina sua</span>
-                        <h1 style="text-transform: uppercase;">senha</h1>
+                        <h1 class="log">login </h1>
                         <p class="subtitle">
-                            digite o codigo que foi enviado para o seu email e escolha uma senha facil de lembra que
-                            tenha no minimo 8 digitos
+                            informe o codigo enviado para o seu email e defina uma senha de pelo menos 8 digitos
                         </p>
                     </div>
                 </div>
-                <dgitiv>
-                    <form action="index.html" method="get" class="form">
-                        <div clssa="form__imaggroup">
-                            <div>
-                                <input type="text" class="form_input" id="cod" placeholder="digite o codigo enviado"
-                                    maxlength="4" required>
-                            </div>
-                            <div>
-                                <input type="password" class="form_input" id="password"
-                                    placeholder="digite uma nova senha" minlength="8" required />
-                            </div>
-                            <div>
-                                <input type="password" class="form_input" id="password" placeholder="confirme sua senha"
-                                    minlength="8" equired>
-                            </div>
-                            <!--_____________________-->
-                            <hr>
-                            <!--_________________________________________________________________________________________________________________________________________________________________________________-->
-                            <div>
-                                <button type="submit" class="btn-grad">redefinir</button>
-                                <h2 class="glass-efect1">viu como foi facil? não se esqueca de anotar a sua senha em
-                                    algum lugar.</h2>
-                            </div>
+                <form action="index.html" method="get" class="form">
+                    <div clssa="form__imaggroup">
+                        <div>
+                            <input type="text" class="form_input" id="password" placeholder="digite o codigo"
+                                maxlength="4" required />
                         </div>
-                    </form>
+                        <div>
+                            <input type="password" class="form_input" id="password" placeholder="digite uma senha"
+                                minlength="8" required />
+                        </div>
+                        <div>
+                            <input type="password" class="form_input" id="password"
+                                placeholder="confirme a senha escolhida" minlength="8" required>
+                        </div>
+                        <hr>
+
+                        <div>
+                            <button type="submit" class="btn-grad">redefinir</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="container-image">
+            <div class="image-login"></div>
             <div class="welcome">
-                <div class="image-login"></div>
-
+                <h2 class="glass-efect">agora, a ultima etapa</h2>
             </div>
+
         </div>
+    </div>
+    <footer>
+        <!-- <nav>
+            <h2>Fique conectado !</h2>
+            <ul>
+                <div class="rodape">
+                    <li><a href="guilherme.mar2004@gmail.com">Email</a></li>
+                    <br>
+                    <li><a href="guilherme.m.21">Instagram</a></li>
+                </div>
+            </ul>
+        </nav> -->
+        <small>Copyright © 2022 </small>
+    </footer>
+
 </body>
 
 </html>
