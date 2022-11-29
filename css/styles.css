@@ -135,10 +135,10 @@
      font-size: 1.4em;
      margin: 3em 0em 0em 6.2em;
      color: rgb(255, 255, 255);
-     background: radial-gradient(circle, #258441 0%, #00442d 100%);
      border: none;
      border-radius: 1em;
      transition: 1s;
+     background: radial-gradient(circle, #00442d 0%, #258441 100%);
  }
 
  .btn-grad:hover {
@@ -150,39 +150,17 @@
      font-size: 1.4em;
      margin: 3.1em 0em 0em 6.3em;
      color: rgb(255, 255, 255);
-     background: radial-gradient(circle, #258441 0%, #00442d 100%);
      border: none;
      border-radius: 1em;
      transition: 0.2s;
+     background: radial-gradient(circle, #258441 0%, #00442d 100%);
  }
 
- .btn-grade {
-     width: auto;
-     height: auto;
-     font-weight: 600;
-     text-transform: uppercase;
-     padding: 1.2em 2em;
-     font-size: 1.4em;
-     margin: 3em 0em 0em 4em;
-     color: rgb(255, 255, 255);
-     background: radial-gradient(circle, #258441 0%, #00442d 100%);
-     border: none;
-     border-radius: 1em;
-     transition: 1s;
-
- }
-
- .btn-grade:hover {
-     width: auto;
-     height: auto;
-     font-weight: 600;
-     text-transform: uppercase;
-     padding: 1em 1em;
-     font-size: 1.3em;
-     margin: 3.5em 0em 0em 6em;
-     color: rgb(255, 255, 255);
-     background: radial-gradient(circle, #258441 0%, #00442d 100%);
-     border: none;
-     border-radius: 1em;
-     transition: 0.2s;
+ .glass-efect {
+     background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+     -webkit-backdrop-filter: blur(20px);
+     backdrop-filter: blur(20px);
+     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+     border: 1px solid rgba(255, 255, 255, 0.18);
+     border-radius: 32px;
  }
