@@ -11,11 +11,6 @@
      margin: 0;
  }
 
- span {
-     color: #fff;
-     font-size: 1.15em;
- }
-
  .container {
      /* border: 2px solid rgb(243, 179, 2); */
      display: flex;
@@ -54,7 +49,7 @@
      background-color: rgba(9, 74, 140, 0.481);
      color: #fff;
      border: 1px solid rgba(8, 91, 168, 0.986);
-
+     /* font-family: ; */
  }
 
  input::placeholder {
@@ -155,7 +150,7 @@
  }
 
  .welcome {
-     margin: -41em 20em 0em 20em;
+     margin: -47em 16em 0em 23em;
  }
 
  .glass-efect {
@@ -167,7 +162,7 @@
      text-align: center;
      width: auto;
      height: auto;
-     padding: 4em 1em;
+     padding: 5.5em 1em;
      transition: 1s;
      color: rgb(255, 255, 255);
      font-size: 2.5rem;
@@ -185,14 +180,14 @@
      text-align: center;
      width: auto;
      height: auto;
-     padding: 4.4em 1.4em;
-     transition: 0.4s;
+     padding: 5.5em 1.4em;
+     transition: 1s;
      color: rgb(255, 255, 255);
      font-size: 2.7rem;
      font-weight: 500;
      text-transform: uppercase;
      font-family: fredoka one;
-     margin: 0em 0em 2em 0em;
+     margin: -1em 0em;
  }
 
  footer {
