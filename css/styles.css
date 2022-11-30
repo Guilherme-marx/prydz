@@ -108,12 +108,13 @@
  a {
      color: #fff;
      /* border: 2px solid #feae24; */
-     margin-left: 20.2em;
+     padding-left: 20.2em;
      font-size: 1em;
  }
 
  .forgot-pass {
      margin-top: -1.3em;
+     /* border: 2px solid #2875b9; */
 
  }
 
