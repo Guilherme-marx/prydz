@@ -5,54 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <meta name="description" content="desafio para desenvolver uma pgina de login responsiva pelo Prydz">
+    <meta name="keywords"
+        content="login, log ,Login, Log, html, css, pagina de login, aprender, desafio, treinamento, ">
+    <meta http-equiv="cache-control" content="No-Store">
+    <meta http-equiv="content-language" content="pt-br, en-US, fr">
+    <meta name="author" content="Guilherme Marques">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="copyright" content="© 2022 guilhermeMarx">
+    <meta name="robots" content="follow">
+    <title>Prydz</title>
 </head>
-<style>
-
-</style>
 
 <body>
     <div class="container">
-        <div class="apresentation-login">
+        <main class="apresentation-login">
             <div class="content-login">
-                <div>
-                    <div class="informatio">
-                        <h1>redefinir senha</h1>
-                        <p class="gradient">
-                            digite codigo enviado por email para redefinir sua senha
+                <section>
+                    <div class="information">
+                        <h1 class="log">login </h1>
+                        <p class="subtitle">
+                            informe o codigo enviado para o seu email e defina uma senha de pelo menos 8 digitos
                         </p>
                     </div>
-                </div>
-                <div>
-                    <form action="index2.html" method="get" class="form">
-                        <div clssa="form__imaggroup">
-                            <input type="password" class="form_input" id="password" placeholder="escolha uma senha"
-                                required />
+                </section>
+                <form action="index.html" method="get" class="form">
+                    <section clssa="form__imaggroup">
+                        <div>
+                            <input type="text" class="form_input" id="password" placeholder="digite o codigo"
+                                maxlength="4" required />
                         </div>
                         <div>
-                            <input type="password" class="form_input" id="password" placeholder="digite a mesma senha"
-                                required="true" />
+                            <input type="password" class="form_input" id="password" placeholder="digite uma senha"
+                                minlength="8" required />
                         </div>
+                        <div>
+                            <input type="password" class="form_input" id="password"
+                                placeholder="confirme a senha escolhida" minlength="8" required>
+                        </div>
+                        <hr>
 
-                        <div class="sub-info">
-                            <hr>
-                            <div>
-                                <button type="submit" class="btn-grad">Receber codigo</button>
-                            </div>
+                        <div>
+                            <button type="submit" class="btn-grad">redefinir</button>
                         </div>
-                    </form>
+                    </section>
+                </form>
+            </div>
+        </main>
+        <section class="container-image">
+            <div class="image-login"></div>
+            <div class="welcome">
+                <h2 class="glass-efect">agora, a ultima etapa</h2>
+            </div>
+
+        </section>
+    </div>
+    <footer>
+        <!-- <nav>
+            <h2>Fique conectado !</h2>
+            <ul>
+                <div class="rodape">
+                    <li><a href="guilherme.mar2004@gmail.com">Email</a></li>
+                    <br>
+                    <li><a href="guilherme.m.21">Instagram</a></li>
                 </div>
-            </div>
-        </div>
-        <div class="image-login">
-            <div>
-                <div class="circulo"></div>
-            </div>
+            </ul>
+        </nav> -->
+        <small>Copyright © 2022 </small>
+    </footer>
 
-        </div>
-    </div>
-    </div>
 </body>
 
 </html>

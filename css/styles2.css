@@ -11,105 +11,42 @@ body {
     margin: 0;
 }
 
-<<<<<<< HEAD
- .container {
-     display: flex;
-     border: 2px solid rgb(255, 0, 43);
-
- }
-=======
 .container {
     /* border: 2px solid rgb(243, 179, 2); */
-    /* display: flex;
-    flex-direction: column; */
->>>>>>> master
-
+    display: flex;
 }
 
-<<<<<<< HEAD
- .apresentation-login {
-     width: 40%;
- }
-
- .content-login {
-     margin: 10em 10rem;
- }
-=======
 /* Style login formulario */
->>>>>>> master
-
-
-
 .apresentation-login {
     background: rgb(80, 142, 222);
     background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 80%);
-    width: 100%;
-
+    width: 40%;
     /* border: 2px solid #2875b9; */
-
 }
 
 .content-login {
-    align-items: center;
-    justify-content: center;
-    /* margin: 7em 10em; */
+    margin: 7em 10em;
     /* border: 1px solid rgb(243, 2, 42); */
 }
 
-.information {
-    display: flex;
-    margin: 1.5em;
-    flex-direction: column;
-}
-
-/* @media (max-width: 1669px) and (min-width: 320px) {
-
-    .content-login,
-    .caption {
-        display: flex;
-    }
-}
-
-@media (max-width: 1280px) {
-    .apresentation-login {
-        display: flex;
-    }
-}
-
-@media (max-width: 1600px) and (min-width: 1550px) {
-
-    .container-image,
-    .glass-efect {
-        display: flex;
-    }
-} */
-
-
 /* formulario  */
 .form {
-
-    margin: 2em;
+    width: 100%;
+    margin-top: 2em;
     border-radius: 1em;
 }
-
 
 .form_input {
     padding: 1.5em 1em;
     height: auto;
-    width: 100%;
+    width: 31.2em;
     margin: 1.5em 0em;
     border: none;
     border-radius: 3em 0em 3em 0em;
     background-color: rgba(9, 74, 140, 0.481);
     color: #fff;
     border: 1px solid rgba(8, 91, 168, 0.986);
-}
-
-.form_section {
-    max-width: 450px;
-    /* display: flex; */
-    /* flex-direction: column; */
-    align-items: center;
+    /* font-family: ; */
 }
 
 input::placeholder {
@@ -119,34 +56,37 @@ input::placeholder {
 }
 
 .caption {
-    display: flex;
-    flex-direction: column;
     color: #fff;
-    margin-right: 6em;
+    margin: 2em 0em;
+    /* border: 1px solid #fff; */
 }
 
-
-
-
 /* Style Imagem Login */
+.container-image {
+    width: 60%;
+    height: 100vh;
+}
 
-img {
+.image-login {
+    background-image: url("../img/planeta_terra.jpg");
+    background-size: cover;
     width: 100%;
+    height: 100%;
+    position: relative;
+    background-position-x: -14em;
 }
 
 /* style formulario */
 h1 {
-    color: rgb(255, 255, 255);
-    /* font-size: 6em; */
-    font-size: 3em;
-    /* margin: 0 0.5em; */
+    color: aliceblue;
+    font-size: 6em;
+    margin: 0 0.5em;
     font-family: 'Bungee Inline', cursive;
     font-weight: 100;
-    align-self: center;
 }
 
 p {
-    color: rgb(255, 255, 255);
+    color: aliceblue;
     text-align: justify;
     font-family: 'Syne Mono', monospace;
     font-size: 0.9em;
@@ -161,18 +101,18 @@ hr {
 a {
     color: #fff;
     /* border: 2px solid #feae24; */
+    margin-left: 20.2em;
+    padding-left: 20.2em;
     font-size: 1em;
 }
 
-/* .forgot-pass {
-    /* margin-top: -1.3em;
-    padding-left: 20.2em; */
-/* border: 2px solid #2875b9;
+.forgot-pass {
+    margin-top: -1.3em;
+    /* border: 2px solid #2875b9; */
 
-} */
+}
 
 /* style button */
-
 .btn-grad {
     width: auto;
     height: auto;
@@ -197,15 +137,14 @@ a {
     font-size: 1em;
     margin: 0em 8em;
     color: rgb(255, 255, 255);
-    border: 2px solid #255884;
+    border: none;
     border-radius: 0em 2em 0em 2em;
     transition: 0.5s;
     background: radial-gradient(circle, #2875b9 0%, #0b2d4b 100%);
 }
 
 .welcome {
-    /* margin: -47em 16em 0em 23em; */
-    display: none;
+    margin: -47em 16em 0em 23em;
 }
 
 .glass-efect {
@@ -249,54 +188,11 @@ footer {
     position: unset;
     left: 0;
     bottom: 0;
-    height: 100%;
     width: 100%;
-    min-width: 375px;
-    padding: 1em 0em 0em 0em;
+    padding: 1em 0em;
     background-color: rgb(25, 68, 104);
     color: rgb(255, 255, 255);
     text-align: center;
     font-family: 'Bungee Inline', cursive;
     font-weight: 100;
-}
-
-
-/* media */
-
-@media (min-width: 768px) {
-    .welcome {
-        display: flex;
-        position: relative;
-        z-index: 99;
-        margin: -30em 0em 6em 0em;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .glass-efect:hover {
-        padding: 1.2em 1em;
-        margin: 2.5em 0em 2.5em 0em;
-    }
-
-    .glass-efect {
-        padding: 1.2em 1em;
-        margin: 6em 4.4em 2em 4.4em;
-        font-size: 2em;
-    }
-}
-
-@media (min-width: 1440px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .apresentation-login {
-        width: 40%;
-    }
-
-    img {
-        width: 100vh;
-    }
 }
