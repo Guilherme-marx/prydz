@@ -113,14 +113,27 @@ input::placeholder {
 
 /* Style Imagem Login */
 .container-image {
-    width: 70.9em;
-    height: 5em;
+    width: 60%;
     border: 2px solid #0055ff;
 }
 
 .img {
     width: 100%;
-    border: 2px solid #ff00dd;
+    /* background-color: #ff00dd; */
+    /* border: 2px solid #ff00dd; */
+}
+
+.image-login {
+
+    background-image: url("../img/planeta_terra.jpg");
+    /* border: 2px solid blue; */
+    background-size: cover;
+    width: 105%;
+    height: 100%;
+    position: relative;
+    /* top: 13em;
+    left: 21em; */
+    background-position-x: -16em;
 }
 
 /* style formulario */
