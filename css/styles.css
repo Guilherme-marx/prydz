@@ -51,7 +51,7 @@ body {
     background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 80%);
     width: 100%;
 
-    border: 2px solid #2875b9;
+    /* border: 2px solid #2875b9; */
 
 }
 
@@ -60,13 +60,17 @@ body {
     align-items: center;
     justify-content: center;
     /* margin: 7em 10em; */
-    border: 1px solid rgb(243, 2, 42);
+    /* border: 1px solid rgb(243, 2, 42); */
 }
 
 .information {
     display: flex;
-    margin: 1.5em;
+    margin: 2.5em;
     flex-direction: column;
+}
+
+.subtitle {
+    margin: 2em;
 }
 
 
@@ -79,15 +83,15 @@ body {
 
 
 .form_input {
-    padding: 1.5em 1em;
+    padding: 1.5em 3.6em;
     height: auto;
-    width: 100%;
+    width: 79%;
     margin: 1.5em 0em;
     border: none;
     border-radius: 3em 0em 3em 0em;
     background-color: rgba(9, 74, 140, 0.481);
     color: #fff;
-    border: 1px solid rgba(8, 91, 168, 0.986);
+    /* border: 1px solid rgba(8, 91, 168, 0.986); */
 }
 
 .form_section {
@@ -114,18 +118,14 @@ input::placeholder {
 /* Style Imagem Login */
 .container-image {
     width: 60%;
-    border: 2px solid #0055ff;
+    background-color: rgb(6, 10, 16);
+
+    /* border: 2px solid #0055ff; */
 }
 
-.img {
-    width: 100%;
-    /* background-color: #ff00dd; */
-    /* border: 2px solid #ff00dd; */
-}
 
 .image-login {
-
-    background-image: url("../img/planeta_terra.jpg");
+    background-image: url("../img/planeta.png");
     /* border: 2px solid blue; */
     background-size: cover;
     width: 105%;
@@ -133,7 +133,6 @@ input::placeholder {
     position: relative;
     /* top: 13em;
     left: 21em; */
-    background-position-x: -16em;
 }
 
 /* style formulario */
@@ -187,7 +186,8 @@ a {
     text-transform: uppercase;
     padding: 1em 4em;
     font-size: 1em;
-    margin: 0em 8em;
+    justify-content: center;
+    /* margin: 0em 8em; */
     color: rgb(255, 255, 255);
     border: 2px solid #255884;
     border-radius: 0em 2em 0em 2em;
@@ -254,27 +254,88 @@ footer {
 
 
 /* media */
+/* @media handheld and (grid) and (max-width: 15em) {
+    ...
+} */
+@media (min-width: 425px)
+
+/* and (min-heigth: 425px)  */
+    {
+    html {
+        height: 100vh;
+    }
+
+    .apresentation-login {
+        height: 52em;
+        width: 425px;
+    }
+
+    .information {
+        margin-top: 0px;
+
+    }
+
+    .content-login {
+        margin: 0em 1.4em;
+
+    }
+
+    hr {
+        width: 15em;
+    }
+
+    form {
+        margin-bottom: 0px;
+    }
+
+    .btn-grad {
+        margin-left: 50px;
+    }
+}
 
 @media (min-width: 768px) {
-    .welcome {
-        display: flex;
-        position: relative;
-        z-index: 99;
-        margin: -30em 0em 6em 0em;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    html {
+        height: 100vh;
     }
 
-    .glass-efect:hover {
-        padding: 1.2em 1em;
-        margin: 2.5em 0em 2.5em 0em;
+    .apresentation-login {
+        height: 52em;
+        width: 768px;
     }
 
-    .glass-efect {
-        padding: 1.2em 1em;
-        margin: 6em 4.4em 2em 4.4em;
-        font-size: 2em;
+    .information {
+        margin-top: 0px;
+    }
+
+    .content-login {
+        justify-content: center;
+
+    }
+
+    hr {
+        width: 22em;
+    }
+
+    .btn-grad {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1020px) {
+    .container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .apresentation-login {
+        width: 50%;
+        height: 59em;
+        background: rgb(80, 142, 222);
+        background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 65%);
+    }
+
+    .image-login {
+        background-position-x: -35em;
     }
 }
 
@@ -285,10 +346,20 @@ footer {
     }
 
     .apresentation-login {
-        width: 40%;
+        width: 50%;
+        height: 59em;
+    }
+
+    .content-login {
+        margin: 6em 9em 0em 9em;
     }
 
     img {
-        width: 100vh;
+        width: 80vh;
+    }
+
+    .image-login {
+        margin-left: 9em;
+        align-items: center;
     }
 }
