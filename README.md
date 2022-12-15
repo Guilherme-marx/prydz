@@ -5,15 +5,15 @@ apos avaliação sera tratado a responsividade do site com outras linguagens com
 # o que será trabalhado aqui?
 De inicio nos trabalhamos com HTML e CSS, nosso pano agora é implementar JavaScript para dar vida a algumas animações, validar senhas, emails, codigos...
 
-<esse-projeto-pode-servir-futuramente-nivel: PROFICIONAL>
+<.esse-projeto-pode-servir-futuramente-nivel: PROFICIONAL>
 
 # RECAPITULANDO
-<LINGUAGENS_USADAS AQUI>
+<.LINGUAGENS_USADAS AQUI>
 
-<HTML> ---> </>
+<.HTML> ---> </>
 
-<CSS>  ---> { }
+<.CSS>  ---> { }
 _____________
 -FUTURAMENTE-
 _____________
-<JavaScript> ---> [ ]
+<.JavaScript> ---> [ ]
