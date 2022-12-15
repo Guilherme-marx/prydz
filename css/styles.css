@@ -11,44 +11,11 @@ body {
     margin: 0;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
- .container {
-     display: flex;
-     border: 2px solid rgb(255, 0, 43);
-
- }
-=======
-.container {
-    /* border: 2px solid rgb(243, 179, 2); */
-    /* display: flex;
-    flex-direction: column; */
->>>>>>> master
-
-}
-=======
 /* .container {
     border: 2px solid #ff0000;
 } */
->>>>>>> 56735a2 (testando responsividade de ambos)
-=======
-/* .container {
-    border: 2px solid #ff0000;
-} */
->>>>>>> 33cd8c72e10e7ef80e7bf91bb60d8c0dbb20c332
 
-<<<<<<< HEAD
- .apresentation-login {
-     width: 40%;
- }
-
- .content-login {
-     margin: 10em 10rem;
- }
-=======
 /* Style login formulario */
->>>>>>> master
 
 
 
