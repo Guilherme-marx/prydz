@@ -13,6 +13,7 @@ body {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
  .container {
      display: flex;
      border: 2px solid rgb(255, 0, 43);
@@ -31,6 +32,11 @@ body {
     border: 2px solid #ff0000;
 } */
 >>>>>>> 56735a2 (testando responsividade de ambos)
+=======
+/* .container {
+    border: 2px solid #ff0000;
+} */
+>>>>>>> 33cd8c72e10e7ef80e7bf91bb60d8c0dbb20c332
 
 <<<<<<< HEAD
  .apresentation-login {
