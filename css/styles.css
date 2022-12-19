@@ -29,7 +29,6 @@ body {
 }
 
 .content-login {
-    margin: 7em;
     align-items: center;
     justify-content: center;
     /* margin: 7em 10em; */
@@ -58,7 +57,7 @@ body {
 .form_input {
     padding: 1.5em 3.6em;
     height: auto;
-    width: 79%;
+    width: 66%;
     margin: 1.5em 0em;
     border: none;
     border-radius: 3em 0em 3em 0em;
@@ -68,7 +67,7 @@ body {
 }
 
 .form_section {
-    max-width: 450px;
+    width: 100%;
     align-items: center;
 }
 
@@ -103,7 +102,6 @@ input::placeholder {
     background-size: cover;
     width: 100%;
     height: 100%;
-    background-size: 160em;
     position: relative;
     /* top: 13em;
     left: 21em; */
@@ -127,7 +125,7 @@ p {
 }
 
 hr {
-    margin: 4em 3em 4em 3em;
+    margin: 4em 1.2em;
     width: 22em;
 }
 
@@ -145,7 +143,6 @@ a {
     text-transform: uppercase;
     padding: 1em 4em;
     font-size: 1em;
-    margin: 0em 8em;
     color: rgb(255, 255, 255);
     border: none;
     border-radius: 2em 0em 2em 0em;
@@ -231,17 +228,80 @@ footer {
 /* @media handheld and (grid) and (max-width: 15em) {
     ...
 } */
-@media (min-width: 425px)
 
-/* and (min-heigth: 425px)  */
-    {
+
+@media (max-width: 992px) {
     html {
         height: 100vh;
     }
 
     .apresentation-login {
-        height: 52em;
-        width: 425px;
+        height: 83.3em;
+    }
+
+    .form {
+        margin: 2em 0em 0em 10em;
+
+    }
+
+    .form_section {
+        width: 77%;
+    }
+
+    .information {
+        margin-top: 0px;
+    }
+
+    h1 {
+        margin-top: 4em;
+    }
+
+    .subtitle {
+        margin: 0em 4em;
+        font-size: 1.2em;
+    }
+
+    .content-login {
+        justify-content: center;
+
+    }
+
+    .caption {
+        font-size: 1.2em;
+    }
+
+    hr {
+        width: 70%;
+        margin-left: 4.73em;
+
+    }
+
+    .btn-grad {
+        margin-left: 10em;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 576px) {
+    html {
+        height: 100%;
+    }
+
+    .apresentation-login {
+        height: 890px;
+    }
+
+    h1 {
+        margin-top: 1em;
+    }
+
+    .subtitle {
+        font-size: 0.8em;
+        margin: 0em;
     }
 
     .information {
@@ -250,48 +310,31 @@ footer {
     }
 
     .content-login {
-        margin: 0em 1.4em;
+        margin: 0;
 
+    }
+
+    .caption {
+        font-size: 1em;
     }
 
     hr {
         width: 15em;
-    }
-
-    form {
-        margin-bottom: 0px;
-    }
-
-    .btn-grad {
-        margin-left: 50px;
-    }
-}
-
-@media (min-width: 768px) {
-    html {
-        height: 100vh;
-    }
-
-    .apresentation-login {
-        height: 52em;
-        width: 768px;
-    }
-
-    .information {
-        margin-top: 0px;
-    }
-
-    .content-login {
-        justify-content: center;
+        margin: 3em 3.2em;
 
     }
 
-    hr {
-        width: 22em;
+    .form {
+        margin: 0em 45px;
+    }
+
+    .form_section {
+        width: 100%;
     }
 
     .btn-grad {
-        justify-content: center;
+        margin-left: 4em;
+
     }
 }
 
