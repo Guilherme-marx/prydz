@@ -30,15 +30,15 @@
                         </p>
                     </div>
                 </section>
-                <form action="index.html" method="get" class="form">
+                <form action="index.html" method="get" class="form" name="f1" onsubmit="returnpass()">
                     <section clssa="form__imaggroup">
                         <div>
                             <input type="text" class="form_input" id="password" placeholder="digite o codigo"
-                                maxlength="4" required />
+                                maxlength="4" name="password" required />
                         </div>
                         <div>
                             <input type="password" class="form_input" id="password" placeholder="digite uma senha"
-                                minlength="8" required />
+                                minlength="8" name="password2" required />
                         </div>
                         <div>
                             <input type="password" class="form_input" id="password"
@@ -72,7 +72,9 @@
         </nav> -->
         <small>Copyright © 2022</small>
     </footer>
-
+    <script src="/html/valida.js"></script>
+    <script type="text/javascript" src="js/meu-arquivo.js"></script>
 </body>
+
 
 </html>
