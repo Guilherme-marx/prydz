@@ -90,13 +90,45 @@
         spans[index].style.display = 'none';
     }
 
-
     function emailValidate() {
+        const valorEmail = email.value.trim();
+
+        if (emailValue === '') {
+            setError(email, 'This field is required');
+            return false;
+        } else
+            if (!isEmail(emailValue)) {
+                setError(email, 'The email entered is not valid');
+                return false;
+            } else
+                if (validateEmailAPI(valueEmail)) {
+                    setError(email, 'The email used is already in use');
+                    return false;
+                }
+        //______________________________________________________________________________________________________
         if (!emailRegex.test(campos[0].value)) {
             setError(0);
         }
         else {
             removeError(0);
+        }
+    }
+
+    function passwordValidate() {
+        const valorPassword = password.value.trim().length;
+        if (passwordValue <= 8) {
+            setError(password, 'sua senha precisa ter mais de 8 caracteres');
+            return false;
+        } else {
+            setSucces(password);
+            return true;
+        }
+    }
+
+    function validatePasswordRepeat() {
+        if (passwordRepeat.value === '') {
+            setError(passwordRepeat);
+
         }
     }
 
