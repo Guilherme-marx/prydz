@@ -30,14 +30,17 @@
                         </p>
                     </div>
                 </section>
-                <form action="redefinirSenhaPage.html" method="get" class="form">
+                <form action="redefinirSenhaPage.html" method="get" class="form" id="form">
                     <section clssa="form__imaggroup">
                         <div>
                             <input type="email" class="form_input" id="email" placeholder="digite seu email"
-                                onblur="validacaoEmail(f1.email)" required />
+                                oninput="emailValidate" required />
+                            <span class="span-required">Digite um email valido</span>
                         </div>
                         <div>
-                            <input type="email" class="form_input" id="email" placeholder="confirme seu email" required>
+                            <input type="email" class="form_input" id="email" placeholder="confirme seu email"
+                                oninput="emailValidate" required>
+                            <span class="span-required">por favor, digite o email escolhido anteriormente.</span>
                         </div>
                         <hr>
 
@@ -68,5 +71,36 @@
         <small>Copyright © 2022</small>
     </footer>
 </body>
+<!-- <script src="/js/valida.js"></script> -->
+<script>
+    const form = document.getElementeById('.required');
+    const campos = document.getSelectorAll('.required');
+    const spans = document.quierySelectorAll(".required");
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+
+    function setError(index) {
+        campos[index].style.border = '2px solid #e63636';
+        spans[index].style.display = 'bolck';
+    }
+
+
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
+
+
+    function emailValidate() {
+        if (!emailRegex.test(campos[0].value)) {
+            setError(0);
+        }
+        else {
+            removeError(0);
+        }
+    }
+
+
+</script>
 
 </html>
