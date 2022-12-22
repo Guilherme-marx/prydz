@@ -34,7 +34,8 @@
                     <section clssa="form__imaggroup">
                         <div>
                             <input type="text" class="form_input" id="password" placeholder="digite o codigo"
-                                maxlength="4" name="password" required />
+                                maxlength="4" name="password" onkeyup="verificarForcaSenha();" required />
+                            <span id="password-status"></span>
                         </div>
                         <div>
                             <input type="password" class="form_input" id="password" placeholder="digite uma senha"

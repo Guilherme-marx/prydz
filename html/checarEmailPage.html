@@ -114,23 +114,7 @@
         }
     }
 
-    function passwordValidate() {
-        const valorPassword = password.value.trim().length;
-        if (passwordValue <= 8) {
-            setError(password, 'sua senha precisa ter mais de 8 caracteres');
-            return false;
-        } else {
-            setSucces(password);
-            return true;
-        }
-    }
 
-    function validatePasswordRepeat() {
-        if (passwordRepeat.value === '') {
-            setError(passwordRepeat);
-
-        }
-    }
 
 
 </script>
