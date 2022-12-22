@@ -88,31 +88,31 @@
     function removeError(index) {
         campos[index].style.border = '';
         spans[index].style.display = 'none';
-    }
+    } -
 
-    function emailValidate() {
-        const valorEmail = email.value.trim();
+        function emailValidate() {
+            const valorEmail = email.value.trim();
 
-        if (emailValue === '') {
-            setError(email, 'This field is required');
-            return false;
-        } else
-            if (!isEmail(emailValue)) {
-                setError(email, 'The email entered is not valid');
+            if (emailValue === '') {
+                setError(email, 'This field is required');
                 return false;
             } else
-                if (validateEmailAPI(valueEmail)) {
-                    setError(email, 'The email used is already in use');
+                if (!isEmail(emailValue)) {
+                    setError(email, 'The email entered is not valid');
                     return false;
-                }
-        //______________________________________________________________________________________________________
-        if (!emailRegex.test(campos[0].value)) {
-            setError(0);
+                } else
+                    if (validateEmailAPI(valueEmail)) {
+                        setError(email, 'The email used is already in use');
+                        return false;
+                    }
+            //______________________________________________________________________________________________________
+            if (!emailRegex.test(campos[0].value)) {
+                setError(0);
+            }
+            else {
+                removeError(0);
+            }
         }
-        else {
-            removeError(0);
-        }
-    }
 
 
 

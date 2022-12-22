@@ -29,7 +29,7 @@
 const form = document.getElementeById('.required');
 const campos = document.getSelectorAll('.required');
 const spans = document.quierySelectorAll(".required");
-const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+const passwordRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
 
 function setError(index) {
