@@ -17,17 +17,20 @@ body {
 }
 
 /* Style login formulario */
+
 .apresentation-login {
     background: rgb(80, 142, 222);
     background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 80%);
     width: 40%;
     /* border: 2px solid #2875b9; */
+
 }
 
 .content-login {
     margin: 7em 10em;
     /* border: 1px solid rgb(243, 2, 42); */
 }
+
 
 /* formulario  */
 .form {
@@ -61,6 +64,9 @@ input::placeholder {
     /* border: 1px solid #fff; */
 }
 
+
+
+
 /* Style Imagem Login */
 .container-image {
     width: 60%;
@@ -68,6 +74,7 @@ input::placeholder {
 }
 
 .image-login {
+
     background-image: url("../img/planeta_terra.jpg");
     background-size: cover;
     width: 100%;
@@ -101,7 +108,6 @@ hr {
 a {
     color: #fff;
     /* border: 2px solid #feae24; */
-    margin-left: 20.2em;
     padding-left: 20.2em;
     font-size: 1em;
 }
@@ -113,6 +119,7 @@ a {
 }
 
 /* style button */
+
 .btn-grad {
     width: auto;
     height: auto;

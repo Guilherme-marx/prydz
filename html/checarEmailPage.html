@@ -30,13 +30,17 @@
                         </p>
                     </div>
                 </section>
-                <form action="redefinirSenhaPage.html" method="get" class="form">
+                <form action="redefinirSenhaPage.html" method="get" class="form" id="form">
                     <section clssa="form__imaggroup">
                         <div>
-                            <input type="email" class="form_input" id="email" placeholder="digite seu email" required />
+                            <input type="email" class="form_input" id="email" placeholder="digite seu email"
+                                oninput="emailValidate" required />
+                            <span class="span-required">Digite um email valido</span>
                         </div>
                         <div>
-                            <input type="email" class="form_input" id="email" placeholder="confirme seu email" required>
+                            <input type="email" class="form_input" id="email" placeholder="confirme seu email"
+                                oninput="emailValidate" required>
+                            <span class="span-required">por favor, digite o email escolhido anteriormente.</span>
                         </div>
                         <hr>
 
@@ -48,10 +52,9 @@
             </div>
         </main>
         <section class="container-image">
+            <!-- <img class="img" src="/img/planeta_terra.jpg" alt="css"> -->
             <div class="image-login"></div>
             <div class="welcome">
-                <h2 class="glass-efect">confirme seu email</h2>
-            </div>
         </section>
     </div>
     <footer>
@@ -65,9 +68,55 @@
                 </div>
             </ul>
         </nav> -->
-        <small>Copyright © 2022 </small>
+        <small>Copyright © 2022</small>
     </footer>
-
 </body>
+<!-- <script src="/js/valida.js"></script> -->
+<script>
+    const form = document.getElementeById('.required');
+    const campos = document.getSelectorAll('.required');
+    const spans = document.quierySelectorAll(".required");
+    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+
+    function setError(index) {
+        campos[index].style.border = '2px solid #e63636';
+        spans[index].style.display = 'bolck';
+    }
+
+
+    function removeError(index) {
+        campos[index].style.border = '';
+        spans[index].style.display = 'none';
+    }
+
+    function emailValidate() {
+        const valorEmail = email.value.trim();
+
+        if (emailValue === '') {
+            setError(email, 'This field is required');
+            return false;
+        } else
+            if (!isEmail(emailValue)) {
+                setError(email, 'The email entered is not valid');
+                return false;
+            } else
+                if (validateEmailAPI(valueEmail)) {
+                    setError(email, 'The email used is already in use');
+                    return false;
+                }
+        //______________________________________________________________________________________________________
+        if (!emailRegex.test(campos[0].value)) {
+            setError(0);
+        }
+        else {
+            removeError(0);
+        }
+    }
+
+
+
+
+</script>
 
 </html>
