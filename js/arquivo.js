@@ -29,7 +29,8 @@
 const form = document.getElementeById('.required');
 const campos = document.getSelectorAll('.required');
 const spans = document.quierySelectorAll(".required");
-const passwordRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+// const passwordRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+var strongRegex = new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})");
 
 
 function setError(index) {
