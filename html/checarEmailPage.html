@@ -71,52 +71,6 @@
         <small>Copyright © 2022</small>
     </footer>
 </body>
-<!-- <script src="/js/valida.js"></script> -->
-<script>
-    const form = document.getElementeById('.required');
-    const campos = document.getSelectorAll('.required');
-    const spans = document.quierySelectorAll(".required");
-    const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
-
-
-    function setError(index) {
-        campos[index].style.border = '2px solid #e63636';
-        spans[index].style.display = 'bolck';
-    }
-
-
-    function removeError(index) {
-        campos[index].style.border = '';
-        spans[index].style.display = 'none';
-    } -
-
-        function emailValidate() {
-            const valorEmail = email.value.trim();
-
-            if (emailValue === '') {
-                setError(email, 'This field is required');
-                return false;
-            } else
-                if (!isEmail(emailValue)) {
-                    setError(email, 'The email entered is not valid');
-                    return false;
-                } else
-                    if (validateEmailAPI(valueEmail)) {
-                        setError(email, 'The email used is already in use');
-                        return false;
-                    }
-            //______________________________________________________________________________________________________
-            if (!emailRegex.test(campos[0].value)) {
-                setError(0);
-            }
-            else {
-                removeError(0);
-            }
-        }
-
-
-
-
-</script>
+<script src="/js/arquivo.js"></script>
 
 </html>
