@@ -30,25 +30,25 @@
                         </p>
                     </div>
                 </section>
-                <form action="index.html" method="get" class="form" name="f1" onsubmit="returnpass()">
+                <form method="get" class="form">
                     <section clssa="form__imaggroup">
                         <div>
-                            <input type="text" class="form_input" id="password" placeholder="digite o codigo"
-                                maxlength="4" name="password" onkeyup="verificarForcaSenha();" required />
-                            <span id="password-status"></span>
+                            <input type="text" class="form_input" id="codigo" placeholder="digite o codigo"
+                                maxlength="4" name="codigo" required />
                         </div>
                         <div>
-                            <input type="password" class="form_input" id="checkPassword" placeholder="digite uma senha"
+                            <input type="password" class="form_input" id="Password" placeholder="digite uma senha"
                                 minlength="8" name="password2" required />
                         </div>
                         <div>
-                            <input type="password" class="form_input" id="password"
+                            <input type="password" class="form_input" id="checkPassword"
                                 placeholder="confirme a senha escolhida" minlength="8" required>
                         </div>
                         <hr>
 
                         <div>
-                            <button type="submit" class="btn-grad">redefinir</button>
+                            <button type="submit" class="btn-grad"
+                                onclick="validarSenha('password','checkPassword')">redefinir</button>
                         </div>
                     </section>
                 </form>
@@ -74,7 +74,20 @@
         <small>Copyright © 2022</small>
     </footer>
     <!-- <script src="/html/valida.js"></script> -->
-    <script src="/js/arquivo.js"></script>
+    <script>
+        function validarSenha(nome1, nome2) {
+            var password = document.getElementById(nome1).value;
+            var checkPassword = document.getElementById(nome2).value;
+            console.log(checkPassword);
+            if (password != "" &&
+                checkPassword != "" &&
+                password === checkPassword) {
+                alert('senha iguais');
+            } else {
+                alert('senhas diferentes');
+            }
+        }
+    </script>
 </body>
 
 
