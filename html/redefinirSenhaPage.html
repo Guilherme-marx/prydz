@@ -30,35 +30,39 @@
                         </p>
                     </div>
                 </section>
-                <form method="get" class="form">
+                <form method="post" class="form">
                     <section clssa="form__imaggroup">
                         <div>
                             <input type="text" class="form_input" id="codigo" placeholder="digite o codigo"
                                 maxlength="4" name="codigo" required />
                         </div>
+
+                        <!----------------------------------------------------->
+
                         <div>
-                            <input type="password" class="form_input" id="Password" placeholder="digite uma senha"
-                                minlength="8" name="password2" required />
+                            <input type="password" name="password" id="password" class="form_input" minlength="8"
+                                placeholder="digite uma senha" required />
                         </div>
                         <div>
-                            <input type="password" class="form_input" id="checkPassword"
-                                placeholder="confirme a senha escolhida" minlength="8" required>
+                            <input type="password" name="checkPassword" id="checkPassword" class="form_input"
+                                minlength="8" placeholder="confirme a senha escolhida" required />
                         </div>
                         <hr>
 
                         <div>
-                            <button type="submit" class="btn-grad"
+                            <button type="submit" class="btn-grad" id="btnVerify"
                                 onclick="validarSenha('password','checkPassword')">redefinir</button>
                         </div>
                     </section>
                 </form>
             </div>
         </main>
-        <section class="container-image">
-            <!-- <img class="img" src="/img/planeta_terra.jpg" alt="css"> -->
-            <div class="image-login"></div>
-            <div class="welcome">
-        </section>
+    </div>
+    <section class="container-image">
+        <!-- <img class="img" src="/img/planeta_terra.jpg" alt="css"> -->
+        <div class="image-login"></div>
+        <div class="welcome">
+    </section>
     </div>
     <footer>
         <!-- <nav>
@@ -74,20 +78,7 @@
         <small>Copyright © 2022</small>
     </footer>
     <!-- <script src="/html/valida.js"></script> -->
-    <script>
-        function validarSenha(nome1, nome2) {
-            var password = document.getElementById(nome1).value;
-            var checkPassword = document.getElementById(nome2).value;
-            console.log(checkPassword);
-            if (password != "" &&
-                checkPassword != "" &&
-                password === checkPassword) {
-                alert('senha iguais');
-            } else {
-                alert('senhas diferentes');
-            }
-        }
-    </script>
+    <script src="/js/arquivo.js"></script>
 </body>
 
 

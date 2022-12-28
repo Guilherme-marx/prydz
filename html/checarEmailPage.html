@@ -30,22 +30,21 @@
                         </p>
                     </div>
                 </section>
-                <form action="redefinirSenhaPage.html" method="get" class="form" id="form">
+                <form action="redefinirSenhaPage.html" method="post" class="form" id="form">
                     <section clssa="form__imaggroup">
                         <div>
-                            <input type="email" class="form_input" id="email" placeholder="digite seu email"
-                                oninput="emailValidate" required />
-                            <span class="span-required">Digite um email valido</span>
+                            <input type="email" name="email1" class="form_input" id="email1"
+                                placeholder="digite seu email" required />
                         </div>
                         <div>
-                            <input type="email" class="form_input" id="ReEmail" placeholder="confirme seu email"
-                                oninput="emailValidate" required>
-                            <span class="span-required">por favor, digite o email escolhido anteriormente.</span>
+                            <input type="email" name="email2" class="form_input" id="email2"
+                                placeholder="confirme seu email" required>
                         </div>
                         <hr>
 
                         <div>
-                            <button type="submit" class="btn-grad">enviar</button>
+                            <button type="submit" class="btn-grad" id="btnVerify"
+                                onclick="validarEmail('email1','email2')">enviar</button>
                         </div>
                     </section>
                 </form>
@@ -71,6 +70,6 @@
         <small>Copyright © 2022</small>
     </footer>
 </body>
-<script src="/js/arquivo.js"></script>
+<script src="/js/valida.js"></script>
 
 </html>
