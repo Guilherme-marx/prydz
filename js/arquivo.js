@@ -51,16 +51,6 @@ function validatorPassword(password) {
 //--------------------------------------------------------------------------------
 
 
-
-
-
-
-
-
-
-
-
-
 function validarSenha(nome1, nome2) {
     var password = document.getElementById(nome1).value;
     var checkPassword = document.getElementById(nome2).value;
