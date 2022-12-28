@@ -41,11 +41,13 @@
 
                         <div>
                             <input type="password" name="password" id="password" class="form_input" minlength="8"
-                                placeholder="digite uma senha" required />
+                                placeholder="digite uma senha" onblur="validarSenha('password','checkPassword')"
+                                required />
                         </div>
                         <div>
                             <input type="password" name="checkPassword" id="checkPassword" class="form_input"
-                                minlength="8" placeholder="confirme a senha escolhida" required />
+                                minlength="8" placeholder="confirme a senha escolhida"
+                                onblur="validarSenha('password','checkPassword')" required />
                         </div>
                         <hr>
 
