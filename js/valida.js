@@ -11,30 +11,72 @@ function validarEmail(nome3, nome4) {
     }
   }
 
-  form.addEventListener('submit' , (e) => {
-    if(email.value == '' && password.value == '') {
-        textForm.textContent = 'você precisa preencher todos os campos'
-    } else if(validarEmail(email.value) === true && validarPassword(passworde.value) === true) {
-        textForm.textContent = '';
-        textEmail.textContent = '';
-        textPassword.textContent = '';
-    }
+
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+
+
+
+/  PARA AVALIAR EM CASA QUAL FAZ MAIS SENTIDO PARA A VALIDAÃO DO FORMULARIO!!!! /
+
+
+
+//   email.addEventListener('keyup' , ( ) => {
+//       if(validarEmail(email.value) !== true) {
+//           textEmail.textContent = 'insira um email valido -- Ex: abc@emial.com --'
+//         }
+// })
+
+// function validarEmail(email) {
+//     let emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
     
-    else {
-        console.log('preencha todos os campos');
-    }
+//     return emailPattern.test(email)
+// }
 
-    e.preventDefault()
-})
+// function validarEmail(field) {
+//     usuario = field.value.substring(0, field.value.indexOf("@"));
+//     dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+    
+//     if ((usuario.length >=1) &&
+//     (dominio.length >=3) &&
+//     (usuario.search("@")==-1) &&
+//         (dominio.search("@")==-1) &&
+//         (usuario.search(" ")==-1) &&
+//         (dominio.search(" ")==-1) &&
+//         (dominio.search(".")!=-1) &&
+//         (dominio.indexOf(".") >=1)&&
+//         (dominio.lastIndexOf(".") < dominio.length - 1)) {
+//     document.getElementById("email").innerHTML="E-mail válido";
+//     alert("email valido");
+// }
+// else{
+//     document.getElementById("email").innerHTML="<font color = 'red'>E-mail inválido </font>";
+//     alert("E-mail inválido");
+// }
+// }
 
-email.addEventListener('keyup' , ( ) => {
-    if(validarEmail(email.value) !== true) {
-        textEmail.textContent = 'insira um email valido -- Ex: abc@emial.com --'
-    }
-})
+// form.addEventListener('submit' , (e) => {
+//   if(email.value == '' && password.value == '') {
+//       textForm.textContent = 'você precisa preencher todos os campos'
+//   } else if(validarEmail(email.value) === true && validarPassword(passworde.value) === true) {
+//       textForm.textContent = '';
+//       textEmail.textContent = '';
+//       textPassword.textContent = '';
+//   }
+  
+//   else {
+//       console.log('preencha todos os campos');
+//   }
 
-function validarEmail(email) {
-    let emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
+//   e.preventDefault()
+// })
 
-    return emailPattern.test(email)
-}
+
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------
+//--------------------------------------------------------------------------------------------------------------------------------

@@ -9,12 +9,12 @@ let textForm = document.getElementById('texForm')
 
 
 password.addEventListener('keyup' , () => {
-    if(validatorPassword(password.value) !== true){
+    if(validarPassword(password.value) !== true){
         textPassword.textContent = ' a senha deve conter no minimo 8 caracteres'
     }
 })
 
-function validatorPassword(password) {
+function validarPassword(password) {
     let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/;
     return passwordPattern.test(password)
 }
