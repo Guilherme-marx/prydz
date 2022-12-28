@@ -6,39 +6,13 @@ let textForm = document.getElementById('texForm')
 // let textPassword = document.getElementById('textPassword')
 // let ReEmail = document.getElementById('ReEmail')
 
-form.addEventListener('submit' , (e) => {
-    if(email.value == '' && password.value == '') {
-        textForm.textContent = 'você precisa preencher todos os campos'
-    } else if(validatorEmail(email.value) === true && validatorPassword(passworde.value) === true) {
-        textForm.textContent = '';
-        textEmail.textContent = '';
-        textPassword.textContent = '';
-    }
-    
-    else {
-        console.log('preencha todos os campos');
-    }
 
-    e.preventDefault()
-})
-
-email.addEventListener('keyup' , ( ) => {
-    if(validatorEmail(email.value) !== true) {
-        textEmail.textContent = 'insira um email valido -- Ex: abc@emial.com --'
-    }
-})
 
 password.addEventListener('keyup' , () => {
     if(validatorPassword(password.value) !== true){
         textPassword.textContent = ' a senha deve conter no minimo 8 caracteres'
     }
 })
-
-function validatorEmail(email) {
-    let emailPattern = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/
-
-    return emailPattern.test(email)
-}
 
 function validatorPassword(password) {
     let passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[#$@!%&*?])[A-Za-z\d#$@!%&*?]{8,30}$/;
