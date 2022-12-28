@@ -48,6 +48,19 @@ function validatorPassword(password) {
 //     let ReEmailpattern =  /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/ 
 //     return ReEmailPattern.test(ReEmail)
 // }
+//--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
 function validarSenha(nome1, nome2) {
     var password = document.getElementById(nome1).value;
     var checkPassword = document.getElementById(nome2).value;
@@ -55,19 +68,6 @@ function validarSenha(nome1, nome2) {
     if (password != "" &&
       checkPassword != "" &&
       password === checkPassword) {
-      alert('senha iguais');
-    } else {
-      alert('senhas diferentes');
-    }
-  }
-
- function validarEmail(nome1, nome2) {
-    var email1 = document.getElementById(nome1).value;
-    var email2 = document.getElementById(nome2).value;
-    console.log(email2);
-    if (email1 != "" &&
-      email2 != "" &&
-      email1 === email2) {
       alert('senha iguais');
     } else {
       alert('senhas diferentes');
