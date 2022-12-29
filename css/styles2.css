@@ -1,379 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
-
-/* Style global */
-body {
-    margin: 0;
-}
-
-.container {
-    /* border: 2px solid rgb(243, 179, 2); */
-    display: flex;
-}
-
-/* Style login formulario */
-
-.apresentation-login {
-    background: rgb(80, 142, 222);
-    background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 80%);
-    width: 40%;
-    /* border: 2px solid #2875b9; */
-
-}
-
-.content-login {
-    margin: 7em 10em;
-    /* border: 1px solid rgb(243, 2, 42); */
-}
-
-
-/* formulario  */
-.form {
-    width: 100%;
-    margin-top: 2em;
-    border-radius: 1em;
-}
-
-.form_input {
-    padding: 1.5em 1em;
-    height: auto;
-    width: 31.2em;
-    margin: 1.5em 0em;
-    border: none;
-    border-radius: 3em 0em 3em 0em;
-    background-color: rgba(9, 74, 140, 0.481);
-    color: #fff;
-    border: 1px solid rgba(8, 91, 168, 0.986);
-    /* font-family: ; */
-}
-
-input::placeholder {
-    font-weight: 900;
-    font-size: 1.3em;
-    color: aliceblue;
-}
-
-.caption {
-    color: #fff;
-    margin: 2em 0em;
-    /* border: 1px solid #fff; */
-}
-
-
-
-
-/* Style Imagem Login */
-.container-image {
-    width: 60%;
-    height: 100vh;
-}
-
-.image-login {
-
-    background-image: url("../img/planeta_terra.jpg");
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+.skeleton {
     position: relative;
-    background-position-x: -14em;
+    width: max-content;
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #0c4278 !important;
+    color: transparent !important;
+    border-color: #0f4072 !important;
+    user-select: none;
+    cursor: default;
 }
 
-/* style formulario */
-h1 {
-    color: aliceblue;
-    font-size: 6em;
-    margin: 0 0.5em;
-    font-family: 'Bungee Inline', cursive;
-    font-weight: 100;
+.skeleton img {
+    opacity: 0;
 }
 
-p {
-    color: aliceblue;
-    text-align: justify;
-    font-family: 'Syne Mono', monospace;
-    font-size: 0.9em;
-    font-weight: 100;
-}
-
-hr {
-    margin: 4em 3em 4em 3em;
-    width: 22em;
-}
-
-a {
-    color: #fff;
-    /* border: 2px solid #feae24; */
-    padding-left: 20.2em;
-    font-size: 1em;
-}
-
-.forgot-pass {
-    margin-top: -1.3em;
-    /* border: 2px solid #2875b9; */
-
-}
-
-/* style button */
-
-.btn-grad {
-    width: auto;
-    height: auto;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 1em 4em;
-    font-size: 1em;
-    margin: 0em 8em;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 2em 0em 2em 0em;
-    transition: 0.4s;
-    background: radial-gradient(circle, #255884 0%, #0b2d4b 100%);
-}
-
-.btn-grad:hover {
-    width: auto;
-    height: auto;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 1em 4em;
-    font-size: 1em;
-    margin: 0em 8em;
-    color: rgb(255, 255, 255);
-    border: none;
-    border-radius: 0em 2em 0em 2em;
-    transition: 0.5s;
-    background: radial-gradient(circle, #2875b9 0%, #0b2d4b 100%);
-}
-
-.welcome {
-    margin: -47em 16em 0em 23em;
-}
-
-.glass-efect {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(4px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 20px;
-    text-align: center;
-    width: auto;
-    height: auto;
-    padding: 5.5em 1em;
-    transition: 1s;
-    color: rgb(255, 255, 255);
-    font-size: 2.5rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: fredoka one;
-}
-
-.glass-efect:hover {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
-    backdrop-filter: blur(4px);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    border-radius: 20px;
-    text-align: center;
-    width: auto;
-    height: auto;
-    padding: 5.5em 1.4em;
-    transition: 1s;
-    color: rgb(255, 255, 255);
-    font-size: 2.7rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    font-family: fredoka one;
-    margin: -1em 0em;
-}
-
-footer {
-    position: unset;
-    left: 0;
+.skeleton::after {
+    position: absolute;
+    top: 0;
+    right: 0;
     bottom: 0;
-    width: 100%;
-    padding: 1em 0em;
-    background-color: rgb(25, 68, 104);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Bungee Inline', cursive;
-    font-weight: 100;
-}
-
-
-footer {
-    position: unset;
     left: 0;
-    bottom: 0;
-    height: 100%;
+    transform: translateX(-100%);
+    background-image: linear-gradient(90deg,
+            #0e4f9800 0,
+            #0f3568 20%,
+            #508ede 60%,
+            #214c84);
+    animation: shimmer 2s infinite;
+    content: '';
+}
+
+@keyframes shimmer {
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+img {
     width: 100%;
-    min-width: 375px;
-    padding: 1em 0em 0em 0em;
-    background-color: rgb(25, 68, 104);
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-family: 'Bungee Inline', cursive;
-    font-weight: 100;
+    vertical-align: middle;
 }
 
 
-/* media */
-/* @media handheld and (grid) and (max-width: 15em) {
-    ...
-} */
-
-
-@media (max-width: 992px) {
-    html {
-        height: 100vh;
-    }
-
-    .apresentation-login {
-        height: 83.3em;
-    }
-
-    .form {
-        margin: 2em 0em 0em 10em;
-
-    }
-
-    .form_section {
-        width: 77%;
-    }
-
-    .information {
-        margin-top: 0px;
-    }
-
-    h1 {
-        margin-top: 4em;
-    }
-
-    .subtitle {
-        margin: 0em 4em;
-        font-size: 1.2em;
-    }
-
-    .content-login {
-        justify-content: center;
-
-    }
-
-    .caption {
-        font-size: 1.2em;
-    }
-
-    hr {
-        width: 70%;
-        margin-left: 4.73em;
-
-    }
-
-    .btn-grad {
-        margin-left: 10em;
-    }
+.profile-container {
+    width: 95%;
+    max-width: 780px;
+    margin: 0 auto;
+    border-radius: 8px;
+    margin-top: 32px;
+    background-color: #0f5091;
+    overflow: hidden;
+    position: relative;
 }
 
-
-
-
-
-
-@media (max-width: 576px) {
-    html {
-        height: 100%;
-    }
-
-    .apresentation-login {
-        height: 890px;
-    }
-
-    h1 {
-        margin-top: 1em;
-    }
-
-    .subtitle {
-        font-size: 0.8em;
-        margin: 0em;
-    }
-
-    .information {
-        margin-top: 0px;
-
-    }
-
-    .content-login {
-        margin: 0;
-
-    }
-
-    .caption {
-        font-size: 1em;
-    }
-
-    hr {
-        width: 15em;
-        margin: 3em 3.2em;
-
-    }
-
-    .form {
-        margin: 0em 45px;
-    }
-
-    .form_section {
-        width: 100%;
-    }
-
-    .btn-grad {
-        margin-left: 4em;
-
-    }
+.cover-img {
+    width: 100%;
+    overflow: hidden;
+    background-color: #0a4e93;
+    aspect-ratio: 4 / 1;
 }
 
-@media (min-width: 1020px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .apresentation-login {
-        width: 50%;
-        height: 59em;
-        background: rgb(80, 142, 222);
-        background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 65%);
-    }
-
-    .image-login {
-        background-position-x: -35em;
-    }
-}
-
-@media (min-width: 1440px) {
-    .container {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .apresentation-login {
-        width: 50%;
-        height: 59em;
-    }
-
-    .content-login {
-        margin: 6em 9em 0em 9em;
-    }
-
-    img {
-        width: 80vh;
-    }
-
-    .image-login {
-        margin-left: 9em;
-        align-items: center;
-    }
+.profile-img {
+    border-radius: 50%;
+    width: 160px;
+    height: 160px;
+    border: 4px solid rgb(11, 63, 136);
+    background-color: #092948;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    bottom: 100px;
 }

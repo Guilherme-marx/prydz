@@ -20,8 +20,8 @@ body {
 
 
 .apresentation-login {
-    background: rgb(80, 142, 222);
-    background: linear-gradient(90deg, rgb(15, 53, 104) 0%, rgb(6, 10, 16) 80%);
+    background: #508ede;
+    background: linear-gradient(90deg, #0f3568 0%, rgb(6, 10, 16) 80%);
     width: 100%;
 
     /* border: 2px solid #2875b9; */
