@@ -10,8 +10,19 @@ function validarEmail(nome3, nome4) {
       alert('não são o mesmo email');
     }
   }
-  function getRandomInt(max) {
-    return Math.floor(Math.random(1001) * 8999);
+
+  var ramdom = document.getElementById("numeros").innerHTML
+  console.log(Math.floor)
+  function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min) + min);
   }
   
-  console.log(getRandomInt()+1000);
+  function getRandomInt(max) {
+    return Math.floor(Math.random() * 1000);
+  }
+
+
+// var valide = document.getElementById("numeros").innerHTML = ''
+// console.log('value', value)
