@@ -11,18 +11,14 @@ function validarEmail(nome3, nome4) {
     }
   }
 
-  var ramdom = document.getElementById("numeros").innerHTML
-  console.log(Math.floor)
-  function getRandomInt(min, max) {
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
-  }
-  
-  function getRandomInt(max) {
-    return Math.floor(Math.random() * 1000);
-  }
+//   var ramdom = document.getElementById("numeros").innerHTML
+//   console.log(Math.floor)
+//   function getRandomInt(min, max) {
+//     const random = (min, max) => Math. floor (Math. random () * (max - min) + min);
+// console. log (random (5, 10));
+//   }
 
-
-// var valide = document.getElementById("numeros").innerHTML = ''
-// console.log('value', value) teste
+  (function() {
+    const random = (min, max) => Math.floor(Math.random() * (min + max) + min);
+    console.log(random(1001, 9998)); 
+  })();
