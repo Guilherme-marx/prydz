@@ -25,4 +25,4 @@ function validarEmail(nome3, nome4) {
 
 
 // var valide = document.getElementById("numeros").innerHTML = ''
-// console.log('value', value)
+// console.log('value', value) teste
