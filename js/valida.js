@@ -7,7 +7,7 @@ function validarEmail(nome3, nome4) {
       email1 === email2) {
       alert('verifique seu email');
     } else {
-      alert('o email não corresponde');
+      alert('o email não corresponde. Por favor, verifique se digitou corretamente o email');
     }
   }
 
@@ -17,4 +17,4 @@ function validarEmail(nome3, nome4) {
 //     const random = (min, max) => Math. floor (Math. random () * (max - min) + min);
 // console. log (random (5, 10));
 //   }
-
+ 
