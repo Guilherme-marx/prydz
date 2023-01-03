@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+    <link rel="stylesheet" href="/css/styles.css">
     <meta name="description" content="desafio para desenvolver uma pgina de login responsiva pelo Prydz">
     <meta name="keywords"
         content="login, log ,Login, Log, html, css, pagina de login, aprender, desafio, treinamento, ">
@@ -26,11 +26,12 @@
                     <div class="information">
                         <h1 class="log">login </h1>
                         <p class="subtitle">
-                            enviaremos um codigo de validação de 4 (quatro) digitos para o email informado abaixo
+                            enviaremos um codigo de validação para o email informado abaixo
                         </p>
                     </div>
                 </section>
-                <form action="redefinirSenhaPage.html" method="get" class="form" id="form">
+                <form action="redefinirSenhaPage.html" method="get" class="form">
+
                     <section clssa="form__imaggroup">
                         <div>
                             <input type="email" name="email1" class="form_input" id="email1"
@@ -43,9 +44,9 @@
                         <hr>
 
                         <div>
-                            <button type="button" class="btn-grad" id="btnVerify"
+                            <button type="submit" class="btn-grad" id="btnVerify"
                                 onclick="validarEmail('email1','email2') ">enviar</button>
-                            <span id="numeros"></span>
+                            <span id="msg"></span>
                         </div>
                     </section>
                 </form>
