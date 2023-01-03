@@ -11,14 +11,14 @@ const checkUsername = () => {
     let valid = false;
 
     const min = 3,
-        max = 25;
+        max = 45;
 
     const username = usernameEl.value.trim();
 
     if (!isRequired(username)) {
-        showError(usernameEl, 'Username cannot be blank.');
+        showError(usernameEl, 'Este campo é obrigatorio.');
     } else if (!isBetween(username.length, min, max)) {
-        showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
+        showError(usernameEl, `O nome de usuário deve ter entre ${min} e ${max} letras`)
     } else {
         showSuccess(usernameEl);
         valid = true;
@@ -31,7 +31,7 @@ const checkEmail = () => {
     let valid = false;
     const email = emailEl.value.trim();
     if (!isRequired(email)) {
-        showError(emailEl, 'Email cannot be blank.');
+        showError(emailEl, 'Este campo é obrigatorio.');
     } else if (!isEmailValid(email)) {
         showError(emailEl, 'Email is not valid.')
     } else {
@@ -48,9 +48,9 @@ const checkPassword = () => {
     const password = passwordEl.value.trim();
 
     if (!isRequired(password)) {
-        showError(passwordEl, 'Password cannot be blank.');
+        showError(passwordEl, 'Este campo é obrgatorio.');
     } else if (!isPasswordSecure(password)) {
-        showError(passwordEl, 'Password must has at least 8 characters that include at least 1 lowercase character, 1 uppercase characters, 1 number, and 1 special character in (!@#$%^&*)');
+        showError(passwordEl, 'Sua senha deve conter pelo menos 8 caraqteres incluindo 1 letra minuscula, 1 letra maiuscula, 1 numero, e um caracter especial (!@#$%^&*)');
     } else {
         showSuccess(passwordEl);
         valid = true;
@@ -66,9 +66,9 @@ const checkConfirmPassword = () => {
     const password = passwordEl.value.trim();
 
     if (!isRequired(confirmPassword)) {
-        showError(confirmPasswordEl, 'Please enter the password again');
+        showError(confirmPasswordEl, 'Por favor, digite a senha novamente');
     } else if (password !== confirmPassword) {
-        showError(confirmPasswordEl, 'The password does not match');
+        showError(confirmPasswordEl, 'As senhas não correspondem');
     } else {
         showSuccess(confirmPasswordEl);
         valid = true;
@@ -170,5 +170,5 @@ form.addEventListener('input', debounce(function (e) {
     }
 }));
 
-
+// paa efeito de teste, sera realizado um desafio em casda para dsenvolver abilidades na programação... assistntindo cursos online como o da rocketseat.
 
