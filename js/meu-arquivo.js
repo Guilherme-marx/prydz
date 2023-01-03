@@ -170,5 +170,5 @@ form.addEventListener('input', debounce(function (e) {
     }
 }));
 
-// paa efeito de teste, sera realizado um desafio em casda para dsenvolver abilidades na programação... assistntindo cursos online como o da rocketseat.
+// paa efeito de teste, sera realizado um desafio em casa para desenvolver habilidades na programação... assistindo cursos online como o da rocketseat.
 
