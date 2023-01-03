@@ -171,4 +171,5 @@ form.addEventListener('input', debounce(function (e) {
 }));
 
 // paa efeito de teste, sera realizado um desafio em casa para desenvolver habilidades na programação... assistindo cursos online como o da rocketseat.
+// antes de tudo, este prototipo de site é de nivel basico, futuramente eu pretendo pegar este projeto e melhorar ok.
 
