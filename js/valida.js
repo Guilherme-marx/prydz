@@ -18,7 +18,3 @@ function validarEmail(nome3, nome4) {
 // console. log (random (5, 10));
 //   }
 
-  (function() {
-    const random = (min, max) => Math.floor(Math.random() * (min + max) + min);
-    console.log(random(1001, 9998)); 
-  })();
