@@ -343,3 +343,14 @@ footer {
         align-items: center;
     }
 }
+
+
+/* invalid */
+input:invalid {
+    background-color: rgb(196, 28, 28);
+}
+
+input:valid {
+    background-color: #9cff9c;
+    color: #000;
+}
