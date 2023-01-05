@@ -11,19 +11,52 @@ function validarEmail(nome3, nome4) {
   }
 }
 $(document).ready(function () {
-  $('form').submit(function (e) {
-    e.preventDefault();
-    window.history.back();
+  $('input').keypress(function (e) {
+    var code = null;
+    code = (e.keyCode ? e.keyCode : e.which);
+    return (code == 13) ? false : true;
   });
 });
 
 
-//   var ramdom = document.getElementById("numeros").innerHTML
-//   console.log(Math.floor)
-//   function getRandomInt(min, max) {
-//     const random = (min, max) => Math. floor (Math. random () * (max - min) + min);
-// console. log (random (5, 10));
+
+
+
+
+
+
+
+
+// $(document).ready(function () {
+//   $('form').submit(function (e) {
+//     e.preventDefault();
+//     window.history.back();
+//   });
+// });
+
+// function Init () {
+//   var myTextbox = document.getElementById('my-textbox');
+//   myTextbox.addEventListener( 'keypress', checkName, false );
+// }
+
+// function validarEmail(evt) {
+//   var charCode = evt.charCode;
+//   if (charCode != 0) {
+//       if (charCode < 97 || charCode > 122) {
+//           evt.preventDefault();
+//       }
 //   }
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
