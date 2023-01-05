@@ -19,25 +19,51 @@
 </head>
 
 <body>
+    <header>
+        <h1>LOGO</h1>
+    </header>
+    <nav>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Ativo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Desativado</a>
+            </li>
+        </ul>
+    </nav>
     <div>
         <div>
-            <header>
-                <h1>LOGO</h1>
-            </header>
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Our team</a></li>
-                    <li><a href="#">Project</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <form>
-                    <input type="search" name="q" placeholder="Procurar">
-                    <input type="submit" value="Go!">
-                </form>
+            <form>
+                <input type="search" name="q" placeholder="Procurar">
+                <input type="submit" value="Go!">
+            </form>
             </nav>
         </div>
     </div>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=777&fg=555&text=Primeiro Slide"
+                    alt="Primeiro Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=666&fg=444&text=Segundo Slide"
+                    alt="Segundo Slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src=".../800x400?auto=yes&bg=555&fg=333&text=Terceiro Slide"
+                    alt="Terceiro Slide">
+            </div>
+        </div>
+    </div>
+
     <div>
         <div>
             <main>
@@ -91,9 +117,65 @@
 
         </div>
     </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <a class="dropdown-item" href="#">Algo mais aqui</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link isolado</a>
+            </div>
+        </div>
+        <input type="text" class="form-control" aria-label="Input text com botão dropdown">
+    </div>
+
+    <div class="input-group">
+        <input type="text" class="form-control" aria-label="Input text com botão dropdown">
+        <div class="input-group-append">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">Dropdown</button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Ação</a>
+                <a class="dropdown-item" href="#">Outra ação</a>
+                <a class="dropdown-item" href="#">Algo mais aqui</a>
+                <div role="separator" class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Link isolado</a>
+            </div>
+        </div>
+    </div>
     <div>
         <section>
-
+            <form>
+                <div class="form-row align-items-center">
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInput">Nome</label>
+                        <input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Fulano">
+                    </div>
+                    <div class="col-auto">
+                        <label class="sr-only" for="inlineFormInputGroup">Usuário</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Usuário">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="form-check mb-2">
+                            <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                            <label class="form-check-label" for="autoSizingCheck">
+                                Lembrar de mim
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+                    </div>
+                </div>
+            </form>
         </section>
     </div>
 
