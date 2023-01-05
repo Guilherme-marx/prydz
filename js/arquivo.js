@@ -7,13 +7,13 @@ function validarSenha(nome1, nome2) {
     password === checkPassword) {
     alert('senha iguais');
   } else {
-    alert('senhas diferentes');
+    log('senhas diferentes');
   }
 }
 
 (function () {
   const random = (min, max) => Math.floor(Math.random() * (min + max) + min);
-  log(random(1001, 9998));
+  alert(random(1001, 9998));
 })();
 
 function log(msg) {
