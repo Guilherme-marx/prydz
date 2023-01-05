@@ -15,61 +15,60 @@
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta name="copyright" content="© 2022 guilhermeMarx">
     <meta name="robots" content="follow">
-    <title>area de login do cliente</title>
+    <title>Prydz</title>
 </head>
 
 <body>
     <div class="container">
         <main class="apresentation-login">
             <div class="content-login">
-                <div class="information">
-                    <h1 class="log">login </h1>
-                    <p class="subtitle">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et qui
-                        adipisci facilis sed laborum repellat ex non! Temporibus harum deleniti
-                        voluptatem dolores, eaque molestias illum unde reiciendis nemo illo!
-                        Consectetur.
-                    </p>
-                </div>
-                <form action="log.html" method="get" class="form">
-                    <section class="form_section">
+                <section>
+                    <div class="information">
+                        <h1 class="log">login </h1>
+                        <p class="subtitle">
+                            informe o codigo enviado para o seu email e defina uma senha de pelo menos 8 digitos
+                        </p>
+                    </div>
+                </section>
+                <form action="index.html" method="get" class="form">
+                    <section clssa="form__imaggroup">
                         <div>
-                            <input type="email" name="email1" class="form_input" id="email1"
-                                placeholder="digite seu email" required />
+                            <input type="text" class="form_input" id="codigo" placeholder="digite o codigo"
+                                minlength="4" maxlength="5" name="codigo" required />
                         </div>
+
+                        <!------------------------senha-------------------------->
+
                         <div>
                             <input type="password" name="password" id="password" class="form_input" minlength="8"
                                 placeholder="digite uma senha" onblur="validarSenha('password','checkPassword')"
                                 required />
                         </div>
-                        <section class="caption">
-                            <div>
-                                <label for="checar">Lembrar informações?</label>
-                                <input class="botao" type="checkbox" id="checar" name="checar" value="informacoes">
-                            </div>
-                            <div>
-                                <div class="forgot-pass">
-                                    <a href="checarEmailPage.html">Esqueceu a senha?</a>
-                                </div>
-                            </div>
-                        </section>
+                        <div>
+                            <input type="password" name="checkPassword" id="checkPassword" class="form_input"
+                                minlength="8" placeholder="confirme a senha escolhida"
+                                onblur="validarSenha('password','checkPassword')" required />
+                        </div>
                         <hr>
 
                         <div>
-                            <button type="submit" class="btn-grad">entrar</button>
+                            <button type="submit" class="btn-grad" id="btnVerify"
+                                onclick="validarSenha('password','checkPassword')">redefinir</button>
                         </div>
                     </section>
                 </form>
             </div>
         </main>
-        <section class="container-image">
-            <div class="image-login"></div>
-            <div class="welcome">
-        </section>
+    </div>
+    <section class="container-image">
+        <div class="image-login"></div>
+        <div class="welcome">
+    </section>
     </div>
     <footer>
         <small>Copyright © 2022</small>
     </footer>
+    <script src="/js/arquivo.js"></script>
 </body>
 
 </html>
