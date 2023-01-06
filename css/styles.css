@@ -234,13 +234,13 @@ footer {
     }
 
     hr {
-        width: 70%;
-        margin-left: 4.73em;
+        width: 60%;
+        margin-left: 3.73em;
 
     }
 
     .btn-grad {
-        margin-left: 10em;
+        margin-left: 8em;
     }
 }
 
@@ -347,12 +347,11 @@ footer {
 
 /* invalid */
 input:hover:invalid {
-    background-color: rgb(196, 28, 28);
+    border: 1.5px solid rgb(196, 28, 28);
 }
 
 input:valid {
-    background-color: #9cff9c;
-    color: #000;
+    border:1.5px solid rgb(116, 242, 52);
 }
 
 
