@@ -11,15 +11,14 @@ function validarEmail(nome3, nome4) {
   }
 }
 
-// ideia - addEventListener
+const element = document.getElementById('checkPassword');
+element.addEventListener('click', myFunction1);
+element.addEventListener('click', myFunction2);
 
+function myFunction1() {
+  document.getElementById('password')
+}
 
-
-
-
-
-
-
-
-
-
+function myFunction2() {
+  document.getElementById('email2')
+}
