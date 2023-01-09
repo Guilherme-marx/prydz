@@ -346,11 +346,11 @@ footer {
 
 
 /* invalid */
-input:hover:invalid {
+.email2,.checkPassword:hover:invalid {
     border: 1.5px solid rgb(196, 28, 28);
 }
 
-input:valid {
+.email2,.checkPassword:valid {
     border:1.5px solid rgb(116, 242, 52);
 }
 
