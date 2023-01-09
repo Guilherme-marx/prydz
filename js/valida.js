@@ -2,6 +2,19 @@ function validarEmail(nome3, nome4) {
   const email1 = document.getElementById(nome3).value;
   const email2 = document.getElementById(nome4).value;
   const cmp = email1 === email2
+  input.addEventListener('keydown', function(e){
+    if (e.keyCode == 13) {
+      e.preventDefault();
+      return enviar(this.value);
+    }
+    mostrador.innerHTML = this.value.split('').reverse().join('');
+  });
+  
+  function enviar(texto) {
+    enviado.innerHTML =  texto + 'confere';
+  }
+
+
   if (cmp) {
     alert('true')
     window.location.href('/html/redefinirSenhaPage.html')
