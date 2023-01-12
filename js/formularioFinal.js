@@ -21,7 +21,7 @@ const validarFormulario = (e) => {
             validarPassowd2();
             break;
 
-        case 'email':
+        case 'email1':
             validarCampo(expressao.email, e.target, 'email');
             validarEmail2();
             break;
@@ -47,6 +47,27 @@ const validarCampo = (expresion, input, campo) => {
         document.querySelector(`#grupo__${campo} i`).classList.remove('fa-check-circle');
         document.querySelector(`#grupo__${campo} .formulario__input-error`).classList.add('formulario__input-error-activo');
         campos[campo] = false;
+    }
+}
+
+const validarEmail2 = () => {
+    const inputEmail1 = document.getElementById('email1')
+    const inputEmail2 = document.getElementById('emial2')
+
+    if (inputEmail1.value !== inputEmail2.value) {
+        document.getElementById(`grupo__email2`).classList.add('formulario__grupo-incorreto');
+        document.getElementById(`grupo__email2`).classList.remove('formulario__grupo-correto');
+        document.querySelector(`#grupo__email2 i`).classList.add('fa-times-circle');
+        document.querySelector(`#grupo__email2 i`).classList.remove('fa-check-circle');
+        document.querySelector(`#grupo__email2 .formulario__input-error`).classList.add('formulario__input-error-ativo');
+        campos['email1'] = false;
+    } else {
+        document.getElementById(`grupo__email2`).classList.remove('formulario__grupo-incorreto');
+        document.getElementById(`grupo__email2`).classList.add('formulario__grupo-correto');
+        document.querySelector(`#grupo__email2 i`).classList.remove('fa-times-circle');
+        document.querySelector(`#grupo__email2 i`).classList.add('fa-check-circle');
+        document.querySelector(`#grupo__email2 .formulario__input-error`).classList.remove('formulario__input-error-ativo');
+        campos['email1'] = true;
     }
 }
 
