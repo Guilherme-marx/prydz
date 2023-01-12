@@ -115,3 +115,13 @@ formulario.addEventListener('submit', (e) => {
         document.getElementById('formulario__mensaje').classList.add('formulario__mensaje-activo');
     }
 });
+
+(function () {
+    const random = (min, max) => Math.floor(Math.random() * (min + max) + min);
+    alert(random(1001, 9998));
+  })();
+  
+  function log(msg) {
+    const logElem = document.querySelector(".log");
+    logElem.innerHTML += `${msg}<br>`;
+}
