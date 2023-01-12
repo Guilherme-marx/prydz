@@ -13,7 +13,7 @@ const campos = {
 const validarFormulario = (e) => {
     switch (e.target.name) {
         case 'password':
-            validarCampo(expressao.password, e.target, 'password');
+            validarCampo(expresiones.password, e.target, 'password');
             validarPassword2();
             break;
 
@@ -22,7 +22,7 @@ const validarFormulario = (e) => {
             break;
 
         case 'email1':
-            validarCampo(expressao.email, e.target, 'email');
+            validarCampo(expresiones.email1, e.target, 'email1');
             validarEmail2();
             break;
 
