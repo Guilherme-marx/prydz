@@ -39,15 +39,21 @@
 
                         <!------------------------senha-------------------------->
 
-                        <div>
-                            <input type="password" name="password" id="password" class="form_input" minlength="8"
-                                placeholder="digite uma senha" onblur="validarSenha('password','checkPassword')"
-                                required />
+                        <div class="formulario__grupo" id="grupo__password">
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password" id="password"
+                                    minlength="8" placeholder="digite uma senha"
+                                    onblur="validarSenha('password','checkPassword')" required />
+                                <i class="formulario__validacao-estado fas fa-times-circle"></i>
+                            </div>
                         </div>
                         <div>
-                            <input type="password" name="checkPassword" id="checkPassword" class="form_input"
-                                minlength="8" placeholder="confirme a senha escolhida"
-                                onblur="validarSenha('password','checkPassword')" required />
+                            <div class="formulario__grupo-input">
+                                <input type="password" class="formulario__input" name="password2" id="password2"
+                                    minlength="8" placeholder="confirme a senha escolhida"
+                                    onblur="validarSenha('password','checkPassword')" required />
+                                <i class="formulario__validacion-estado fas fa-times-circle"></i>
+                            </div>
                         </div>
                         <hr>
 
@@ -59,16 +65,16 @@
                 </form>
             </div>
         </main>
-    
-    <section class="container-image">
-        <div class="image-login"></div>
-        <div class="welcome">
-    </section>
+
+        <section class="container-image">
+            <div class="image-login"></div>
+            <div class="welcome">
+        </section>
     </div>
     <footer>
         <small>Copyright © 2022</small>
     </footer>
-    <script src="/js/arquivo.js"></script>
+    <script src="/js/formularioFinal.js"></script>
 </body>
 
 </html>
