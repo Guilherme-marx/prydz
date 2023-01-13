@@ -43,7 +43,7 @@
                             <div class="formulario__grupo-input">
                                 <input type="password" class="formulario__input" name="password" id="password"
                                     minlength="8" placeholder="digite uma senha"
-                                    onblur="validarSenha('password','checkPassword')" required />
+                                    onblur="validarSenha('password','password2')" required />
                                 <i class="formulario__validacao-estado fas fa-times-circle"></i>
                             </div>
                             sua senha deve conter
@@ -52,7 +52,7 @@
                             <div class="formulario__grupo-input">
                                 <input type="password" class="formulario__input" name="password2" id="password2"
                                     minlength="8" placeholder="confirme a senha escolhida"
-                                    onblur="validarSenha('password','checkPassword')" required />
+                                    onblur="validarSenha('password','password2')" required />
                                 <i class="formulario__validacion-estado fas fa-times-circle"></i>
                             </div>
                         </div>
@@ -60,7 +60,7 @@
                         <!--------------------------botao-------------------------->
                         <div>
                             <button type="submit" class="btn-grad" id="btnVerify"
-                                onclick="validarSenha('password','checkPassword')">redefinir</button>
+                                onclick="validarSenha('password','password2')">redefinir</button>
                         </div>
                     </section>
                 </form>
