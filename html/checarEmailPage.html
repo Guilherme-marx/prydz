@@ -29,13 +29,10 @@
                             confirme seu email, em seguida eniaremos um codigo de validação.
                         </p>
                     </div>
+                    <!--------------------------email-------------------------->
                 </section>
                 <form action="redefinirSenhaPage.html" method="post" class="formulario" id="formulario">
-
                     <section clssa="form__imaggroup">
-
-
-
                         <div class="formulario__grupo" id="grupo__email">
                             <div class="formulario__grupo-input">
                                 <input type="email" name="email1" class="form_input" id="email1"
@@ -43,24 +40,18 @@
                                 <i class="formulario__validacao-estado fas fa-times-circle"></i>
                             </div>
                         </div>
-
-
-
-
                         <div class="form___grupo" id="grupo__email2">
                             <div class="formulario__grupo-input">
                                 <input type="email" name="email2" class="form_input" id="email2"
                                     placeholder="confirme o email anterior" required />
                                 <i class="formulario__validacao-estado fas fa-times-circle"></i>
                             </div>
+
+                            <p class="formulario__input-error">Verifique se digitou o email corretamente</p>
+                            
                         </div>
-
-
-
                         <hr>
-
-
-
+                        <!--------------------------botao-------------------------->
                         <div>
                             <button type="submit" class="btn-grad" id="btnVerify"
                                 onclick="validarEmail('email1','email2') ">enviar</button>
