@@ -11,10 +11,6 @@ body {
     margin: 0;
 }
 
-/* .container {
-    border: 2px solid #ff0000;
-} */
-
 /* Style login formulario */
 
 
@@ -23,16 +19,11 @@ body {
     background: #508ede;
     background: linear-gradient(90deg, #0f3568 0%, rgb(6, 10, 16) 80%);
     width: 100%;
-
-    /* border: 2px solid #2875b9; */
-
 }
 
 .content-login {
     align-items: center;
     justify-content: center;
-    /* margin: 7em 10em; */
-    /* border: 1px solid rgb(243, 2, 42); */
 }
 
 .information {
@@ -63,12 +54,22 @@ body {
     border-radius: 3em 0em 3em 0em;
     background-color: rgba(9, 74, 140, 0.481);
     color: #fff;
-    /* border: 1px solid rgba(8, 91, 168, 0.986); */
 }
 
 .form_section {
     width: 100%;
     align-items: center;
+}
+
+.formulario__input{
+    padding: 1.5em 3.6em;
+    height: auto;
+    width: 66%;
+    margin: 1.5em 0em;
+    border: none;
+    border-radius: 3em 0em 3em 0em;
+    background-color: rgba(9, 74, 140, 0.481);
+    color: #fff;
 }
 
 input::placeholder {
@@ -92,19 +93,16 @@ input::placeholder {
     width: 60%;
     background-color: rgb(6, 10, 16);
 
-    /* border: 2px solid #0055ff; */
 }
 
 
 .image-login {
     background-image: url("../img/planeta.png");
-    /* border: 2px solid blue; */
     background-size: cover;
     width: 100%;
     height: 100%;
     position: relative;
-    /* top: 13em;
-    left: 21em; */
+
 }
 
 /* style formulario */
@@ -158,7 +156,6 @@ a {
     padding: 1em 4em;
     font-size: 1em;
     justify-content: center;
-    /* margin: 0em 8em; */
     color: rgb(255, 255, 255);
     border: 2px solid #255884;
     border-radius: 0em 2em 0em 2em;
@@ -167,7 +164,6 @@ a {
 }
 
 .welcome {
-    /* margin: -47em 16em 0em 23em; */
     display: none;
 }
 
