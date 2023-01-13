@@ -119,9 +119,91 @@ formulario.addEventListener('submit', (e) => {
 (function () {
     const random = (min, max) => Math.floor(Math.random() * (min + max) + min);
     alert(random(1001, 9998));
-  })();
-  
-  function log(msg) {
+})();
+
+function log(msg) {
     const logElem = document.querySelector(".log");
     logElem.innerHTML += `${msg}<br>`;
 }
+
+//_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+// 
+
+
+if (emailValue === '') {
+    setErrorFor(email, "Email não pode estar em branco");
+    status = false;
+} else if (!isEmail(emailValue)) {
+    setErrorFor(email, "Este email não é valido");
+    status = false;
+} else {
+    setSuccessFor(email);
+}
+
+if (passwordValue === '') {
+    setErrorFor(password, "Senha não pode estar em branco");
+    status = false;
+} else {
+    setSuccessFor(password);
+}
+
+if (passwordCheck === '') {
+    setErrorFor(password2, "Este campo não pode ficar em branco");
+    status = false;
+} else if (passwordValue !== passwordCheck) {
+    setErrorFor(password2, "As senhas não conferem");
+    status = false;
+} else {
+    setSuccessFor(password2);
+}
+
+return status;
+
+
+function setErrorFor(input, message) {
+    const formGroup = input.parentElement; // .form-group
+    const small = formGroup.querySelector('Pequeno');
+
+    // add error message inside small
+    small.innerText = message;
+
+    // add error class
+    formGroup.className = 'Erro no formulario';
+}
+
+function setSuccessFor(input) {
+    const formGroup = input.parentElement; // .form-group
+    formGroup.className = 'Envio de formulariocom sucesso';
+}
+
+function isEmail(email) {
+    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+}
+
+
+
+
+// comparar
+
+//      email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+
+// coparar 
+
+//    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+
+//  testear
+
+//function verificaForcaSenha() {
+//    const numeros = /([0-9])/;
+//    const alfabeto = /([a-zA-Z])/;
+//    const chEspeciais = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
+//    if ($('#password').val().length < 6) {
+//        $('#password-status').html("<span style='color:red'>Fraco, insira no mínimo 6 caracteres</span>");
+//    } else {
+//        if ($('#password').val().match(numeros) && $('#password').val().match(alfabeto) && $('#password').val().match(chsp    eciais)) {
+//            $('#password-status').html("<span style='color:green'><b>Forte</b></span>");
+//        } else {
+//            $('#password-status').html("<span style='color:orange'>Médio, insira um caracter especial</span>");
+//        }
+//    }
+//}
