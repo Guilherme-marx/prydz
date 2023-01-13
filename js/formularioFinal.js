@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll('#formulario input');
 
 const expressao = {
     password: /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/.test(password, password2),
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(email)
+    email: /^[\w-\.]+@([\w-]+\.)+[\w-]{9,}$/.test(email)
 }
 
 const campos = {
@@ -118,7 +118,7 @@ formulario.addEventListener('submit', (e) => {
 
 (function () {
     const random = (min, max) => Math.floor(Math.random() * (min + max) + min);
-    alert(random(1001, 9998));
+    alert(random(1001, 4970));
 })();
 
 function log(msg) {
