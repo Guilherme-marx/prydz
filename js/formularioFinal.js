@@ -3,7 +3,7 @@ const inputs = document.querySelectorAll('#formulario input');
 
 const expressao = {
     password: /^.{4,16}$/,
-    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/
+    email: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/.test(email)
 }
 
 const campos = {
@@ -130,55 +130,65 @@ function log(msg) {
 // 
 
 
-if (emailValue === '') {
-    setErrorFor(email, "Email não pode estar em branco");
-    status = false;
-} else if (!isEmail(emailValue)) {
-    setErrorFor(email, "Este email não é valido");
-    status = false;
-} else {
-    setSuccessFor(email);
-}
+// if (emailValue === '') {
+//     setErrorFor(email, "Email não pode estar em branco");
+//     status = false;
+// } else if (!isEmail(emailValue)) {
+//     setErrorFor(email, "Este email não é valido");
+//     status = false;
+// } else {
+//     setSuccessFor(email);
+// }
 
-if (passwordValue === '') {
-    setErrorFor(password, "Senha não pode estar em branco");
-    status = false;
-} else {
-    setSuccessFor(password);
-}
+// if (passwordValue === '') {
+//     setErrorFor(password, "Senha não pode estar em branco");
+//     status = false;
+// } else {
+//     setSuccessFor(password);
+// }
 
-if (passwordCheck === '') {
-    setErrorFor(password2, "Este campo não pode ficar em branco");
-    status = false;
-} else if (passwordValue !== passwordCheck) {
-    setErrorFor(password2, "As senhas não conferem");
-    status = false;
-} else {
-    setSuccessFor(password2);
-}
+// if (passwordCheck === '') {
+//     setErrorFor(password2, "Este campo não pode ficar em branco");
+//     status = false;
+// } else if (passwordValue !== passwordCheck) {
+//     setErrorFor(password2, "As senhas não conferem");
+//     status = false;
+// } else {
+//     setSuccessFor(password2);
+// }
 
-return status;
+// return status;
 
 
-function setErrorFor(input, message) {
-    const formGroup = input.parentElement; // .form-group
-    const small = formGroup.querySelector('Pequeno');
+// function setErrorFor(input, message) {
+    // const formGroup = input.parentElement;                           //  .form-group
+    // const small = formGroup.querySelector('Pequeno');
 
     // add error message inside small
-    small.innerText = message;
+    // small.innerText = message;
 
     // add error class
-    formGroup.className = 'Erro no formulario';
-}
+    // formGroup.className = 'Erro no formulario';
+// }
 
-function setSuccessFor(input) {
-    const formGroup = input.parentElement; // .form-group
-    formGroup.className = 'Envio de formulariocom sucesso';
-}
+// function setSuccessFor(input) {
+    // const formGroup = input.parentElement;                           // .form-group
+    // formGroup.className = 'Envio de formulariocom sucesso';
+// }
 
-function isEmail(email) {
-    return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
-}
+// function isEmail(email) {
+//     return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+// }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,6 +200,16 @@ function isEmail(email) {
 // coparar 
 
 //    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+
+
+
+
+
+
+
+
+
+
 
 //  testear
 
